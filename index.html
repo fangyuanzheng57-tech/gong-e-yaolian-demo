@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#b3081b">
+<title>工银澳门手机银行 · 工e药链专区（虚拟演示）</title>
+<style>
+:root{--red:#b3081b;--red2:#d51c30;--ink:#17263a;--muted:#7a8797;--line:#e8edf2;--paper:#f4f6f8;--white:#fff;--green:#16856f;--amber:#af7414;--navy:#17263a;--shadow:0 14px 38px #1b2d4210}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.55 "Microsoft YaHei","PingFang SC",Arial,sans-serif}button{font:inherit;cursor:pointer}.app{min-height:100vh}.sidebar{position:fixed;inset:0 auto 0 0;width:246px;background:#fff;border-right:1px solid var(--line);padding:24px 16px;z-index:5;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;padding:0 8px 26px;border-bottom:1px solid var(--line)}.brandmark{width:41px;height:41px;border:2px solid var(--red);border-radius:50%;color:var(--red);display:grid;place-items:center;font-family:serif;font-weight:900;font-size:24px;box-shadow:inset 0 0 0 2px #fff,inset 0 0 0 4px #f5d9dd}.brand b{font-size:16px;letter-spacing:.4px}.brand small{display:block;color:#8b96a5;font-size:10px;letter-spacing:.5px}.nav-label{font-size:10px;color:#a1aab6;letter-spacing:1.3px;padding:22px 12px 8px}.nav{display:grid;gap:4px}.nav button{border:0;background:transparent;border-radius:10px;padding:12px;color:#657286;text-align:left;display:flex;align-items:center;gap:12px;transition:.2s}.nav button:hover{background:#faf1f2;color:var(--red)}.nav button.active{background:#fff1f2;color:var(--red);font-weight:700}.ni{width:23px;height:23px;display:grid;place-items:center;font-size:17px}.nav-foot{margin-top:auto;padding:14px 12px;border:1px solid #f0e3e4;border-radius:12px;background:#fff9f9;color:#80535a;font-size:11px}.nav-foot b{display:block;color:var(--red);font-size:12px;margin-bottom:4px}.main{margin-left:246px;min-height:100vh}.topbar{height:68px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 36px;position:sticky;top:0;z-index:4}.crumb{font-size:12px;color:#8b96a5}.crumb strong{font-size:14px;color:var(--ink);margin-left:8px}.topright{display:flex;align-items:center;gap:18px}.demo-tag{border:1px solid #f0cbd0;background:#fff6f6;color:var(--red);padding:5px 10px;border-radius:30px;font-size:10px;font-weight:700}.avatar{width:31px;height:31px;border-radius:50%;background:#f4e4e6;color:var(--red);display:grid;place-items:center;font-weight:700}.content{max-width:1320px;margin:auto;padding:30px 36px 60px}.page{display:none;animation:rise .28s ease both}.page.active{display:block}@keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}.eyebrow{font-size:10px;color:var(--red);font-weight:700;letter-spacing:1.2px;text-transform:uppercase}.title-row{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin:4px 0 24px}.title-row h1{font-size:27px;letter-spacing:-.6px;margin:5px 0 3px}.subtitle{color:var(--muted);font-size:12px}.btn{border:0;background:var(--red);color:#fff;border-radius:8px;padding:10px 16px;font-weight:700;box-shadow:0 5px 12px #b3081b21;transition:.2s}.btn:hover{background:#920618;transform:translateY(-1px)}.btn.ghost{background:#fff;color:var(--red);border:1px solid #ebcdd1;box-shadow:none}.btn.sm{font-size:11px;padding:8px 12px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.hero{position:relative;overflow:hidden;min-height:215px;padding:28px 32px;color:#fff;background:linear-gradient(112deg,#9e0619,#c31127 56%,#e22d40);border-radius:17px;display:grid;grid-template-columns:1.18fr .82fr;align-items:center;box-shadow:0 18px 40px #a40b1c27}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff27;border-radius:50%;right:-68px;top:-155px;box-shadow:0 0 0 35px #ffffff0c,0 0 0 78px #ffffff08}.hero-copy{position:relative;z-index:1}.hero .eyebrow{color:#ffd7dc}.hero h2{font-size:30px;line-height:1.24;margin:9px 0 9px;max-width:510px}.hero p{margin:0;color:#ffe9eb;font-size:13px}.hero-actions{display:flex;gap:10px;margin-top:19px}.hero .btn{background:#fff;color:var(--red);box-shadow:none}.hero .btn.ghost{background:#ffffff16;color:#fff;border-color:#ffffff62}.hero-art{height:160px;position:relative;z-index:1;display:flex;align-items:center;justify-content:center}.orbit{position:absolute;width:190px;height:125px;border:1px solid #ffffff56;border-radius:50%;transform:rotate(-23deg)}.orbit.o2{width:235px;height:155px;transform:rotate(31deg);border-color:#ffffff35}.hub{width:74px;height:74px;border-radius:21px;background:#fff;color:var(--red);display:grid;place-items:center;font-size:32px;font-family:serif;font-weight:900;box-shadow:0 12px 36px #50000e4d}.node{position:absolute;width:39px;height:39px;border:1px solid #ffffff82;background:#ffffff22;backdrop-filter:blur(5px);border-radius:12px;display:grid;place-items:center;font-size:17px}.n1{top:8px;left:83px}.n2{right:50px;top:47px}.n3{bottom:4px;left:92px}.n4{left:23px;top:73px}.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:17px 0}.stat{padding:16px 17px}.stat-top{display:flex;justify-content:space-between;align-items:center;color:#718094;font-size:11px}.stat-icon{width:29px;height:29px;border-radius:9px;background:#fff1f2;color:var(--red);display:grid;place-items:center;font-size:15px}.stat strong{font-size:24px;display:block;margin-top:10px;letter-spacing:-.4px}.stat small{font-size:10px;color:#9aa4b0}.trend{color:var(--green)!important}.grid2{display:grid;grid-template-columns:1.25fr .75fr;gap:15px;margin-top:15px}.panel{padding:19px 20px}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.panel-head h3{font-size:14px;margin:0}.panel-head span{font-size:10px;color:#9aa4b0}.chart-wrap{height:185px;position:relative}.chart-wrap svg{width:100%;height:100%;overflow:visible}.chart-labels{display:flex;justify-content:space-between;color:#a0a9b4;font-size:9px;margin-top:-4px}.legend{display:flex;gap:16px;color:#718094;font-size:10px}.legend i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:5px}.legend i.gray{background:#92a8b8}.activity{display:grid;gap:0}.activity-row{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid #f0f2f5}.activity-row:last-child{border:0}.activity-icon{width:28px;height:28px;border-radius:9px;background:#f4f7fa;display:grid;place-items:center;color:#60758b}.activity-row b{font-size:11px;display:block}.activity-row small{color:#9ba5b1;font-size:9px}.status{font-size:9px;padding:4px 8px;border-radius:20px;background:#eaf7f3;color:var(--green)}.status.warn{background:#fff4df;color:var(--amber)}.flow-card{margin-top:15px;padding:18px 20px}.flow-head{display:flex;justify-content:space-between;align-items:center}.flow-head h3{margin:0;font-size:14px}.flow{display:grid;grid-template-columns:repeat(7,1fr);align-items:center;margin:22px 6px 8px}.flow-node{text-align:center}.flow-node .bubble{width:43px;height:43px;margin:auto auto 8px;border-radius:14px;background:#fff0f1;color:var(--red);display:grid;place-items:center;font-size:18px}.flow-node.done .bubble{background:#eaf7f3;color:var(--green)}.flow-node b{font-size:10px}.flow-node small{display:block;color:#9ba5b1;font-size:9px}.arrow{height:2px;background:#ebd9dc;position:relative;margin-top:-28px}.arrow:after{content:"";position:absolute;right:-1px;top:-3px;border:4px solid transparent;border-left-color:#c5a6aa}.section-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{padding:19px;min-height:155px;cursor:pointer;transition:.2s}.feature:hover{transform:translateY(-3px);border-color:#edc4ca;box-shadow:0 15px 34px #7e1c2815}.feature-icon{height:37px;width:37px;background:#fff1f2;color:var(--red);border-radius:11px;display:grid;place-items:center;font-size:18px}.feature h3{font-size:13px;margin:14px 0 4px}.feature p{font-size:10px;color:var(--muted);margin:0}.feature .arr{float:right;color:var(--red);font-size:18px;margin-top:-20px}.callout{padding:12px 15px;border-radius:10px;background:#fff8ed;border:1px solid #f6e7cc;color:#7e5e2b;font-size:10px;margin-top:14px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:15px}.section-title{font-size:14px;margin:0 0 12px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;color:#7b8795;font-size:10px;margin-bottom:5px}.field input,.field select{width:100%;border:1px solid #e4e9ee;background:#fafbfd;border-radius:8px;padding:11px;color:var(--ink);outline:none}.field input:focus,.field select:focus{border-color:#ca6470;box-shadow:0 0 0 3px #fff0f2}.order-option{border:1px solid #e7ebef;border-radius:10px;padding:13px;display:flex;justify-content:space-between;align-items:center;margin-top:10px;cursor:pointer}.order-option.selected{border-color:#cf6d78;background:#fff8f8}.order-option b{font-size:11px}.order-option small{display:block;color:#8a96a4;font-size:9px}.check{color:var(--green);font-weight:700}.progressline{display:flex;align-items:center;gap:6px;margin:17px 0}.progressline span{font-size:9px;color:#8894a2}.progressline i{height:2px;background:#e4e9ee;flex:1}.progressline i.on{background:var(--red)}.upload{border:1px dashed #d9a3aa;border-radius:12px;background:#fff9f9;padding:22px;text-align:center;cursor:pointer;color:#746d74}.upload b{display:block;color:var(--ink);font-size:12px;margin:6px}.upload small{font-size:9px;color:#929ca8}.doc-area{background:#f3f5f7;border-radius:12px;padding:13px;min-height:294px}.paper{background:#fff;border:1px solid #e8e8e5;border-radius:3px;padding:16px 13px;min-height:250px;box-shadow:0 5px 12px #2130440d;position:relative}.paper-head{text-align:center;border-bottom:1px solid #e2e2df;padding-bottom:9px;margin-bottom:12px;font-size:12px;font-weight:700}.paper-line{font-size:9px;color:#586576;margin:11px 0;position:relative}.hl{background:#d9f1e8;border-radius:3px;box-shadow:0 0 0 2px #d9f1e8}.hl.warn{background:#fff0c7;box-shadow:0 0 0 2px #fff0c7}.paper-stamp{position:absolute;right:12px;bottom:16px;border:1px solid #d75c69;color:#c44957;padding:5px 8px;font-size:9px;transform:rotate(-12deg);opacity:.65}.tech-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}.tech-tag{font-size:9px;padding:4px 7px;border-radius:20px;background:#f0f4f7;color:#64768b}.extraction{display:grid;gap:0}.extract-row{display:grid;grid-template-columns:79px 1fr 42px;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #f0f2f4;font-size:10px}.extract-row span{color:#84909d}.extract-row b{font-size:10px}.confidence{color:var(--green);font-size:9px;text-align:right}.meter{height:3px;background:#edf0f3;border-radius:4px;grid-column:2/4;margin-top:-5px}.meter i{height:100%;display:block;background:#41ae91;border-radius:4px}.match-table{width:100%;border-collapse:collapse;font-size:10px}.match-table th{color:#9aa4b0;font-weight:500;text-align:left;padding:8px;border-bottom:1px solid var(--line)}.match-table td{padding:9px 8px;border-bottom:1px solid #f0f2f4}.match-table td:last-child{color:var(--green);font-weight:700}.tag{background:#eaf7f3;color:var(--green);padding:4px 7px;border-radius:20px;font-size:9px}.rag-banner{padding:19px 22px;background:linear-gradient(110deg,#fff7e8,#fff);border:1px solid #f2e4c7;border-radius:13px;display:flex;justify-content:space-between;align-items:center}.risk-score{display:flex;align-items:center;gap:13px}.score-ring{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#26a580 0 76%,#e8f1ee 76%);position:relative}.score-ring:before{content:"";position:absolute;inset:5px;background:#fffaf1;border-radius:50%}.score-ring b{position:relative;font-size:21px;color:#167c67}.risk-bars{display:grid;gap:15px}.riskbar{display:grid;grid-template-columns:80px 1fr 32px;gap:10px;align-items:center;font-size:10px}.riskbar label{color:#59687a}.riskbar .track{height:7px;background:#edf0f2;border-radius:5px;overflow:hidden}.riskbar .track i{height:100%;display:block;background:linear-gradient(90deg,#61bea2,#168b70);border-radius:5px}.riskbar.attn .track i{background:linear-gradient(90deg,#edc46f,#d79a27)}.riskbar b{text-align:right;color:#506073;font-size:9px}.source-list{display:grid;gap:8px}.source{border:1px solid #e8edf1;border-radius:9px;padding:10px;cursor:pointer;transition:.18s}.source:hover,.source.active{border-color:#d78992;background:#fff9f9}.source-head{display:flex;justify-content:space-between;font-size:10px}.source p{margin:6px 0 0;color:#7c8997;font-size:9px}.cite{color:var(--red);font-size:9px;font-weight:700}.report{background:#fbfcfd;border:1px solid #edf0f3;border-radius:10px;padding:14px;font-size:10px;color:#59697c;line-height:1.8}.report h4{margin:0 0 6px;color:var(--ink);font-size:12px}.highlight{background:#fff1c9;border-radius:3px;padding:0 2px}.map{padding:18px}.map-row{display:flex;align-items:center;justify-content:space-around;margin:18px 0 6px;position:relative}.map-row:before{content:"";position:absolute;left:12%;right:12%;height:2px;background:#e5d7d9;top:24px}.map-node{z-index:1;text-align:center;width:95px}.map-node i{display:grid;place-items:center;margin:auto auto 8px;background:#fff0f2;color:var(--red);width:48px;height:48px;border-radius:15px;font-style:normal;font-size:18px}.map-node.done i{background:#e7f6f1;color:var(--green)}.map-node b{font-size:10px;display:block}.map-node small{font-size:9px;color:#99a3af}.timeline{border-left:1px solid #e5d6d9;margin:15px 0 0 10px;padding:0 0 0 20px;display:grid;gap:17px}.event{position:relative}.event:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--red);left:-25px;top:4px;box-shadow:0 0 0 4px #fff0f2}.event b{font-size:10px}.event small{display:block;color:#84909f;font-size:9px}.credit-score{padding:22px;display:flex;align-items:center;gap:22px;background:linear-gradient(110deg,#fff,#f4fbf8)}.credit-number{font-size:45px;color:var(--green);font-weight:800;line-height:1}.credit-gauge{height:8px;background:#e9efed;border-radius:10px;overflow:hidden;margin:10px 0}.credit-gauge i{display:block;height:100%;width:82%;background:linear-gradient(90deg,#45b28f,#16856f);border-radius:10px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,15px);background:#1f2c3d;color:#fff;padding:11px 16px;border-radius:9px;opacity:0;pointer-events:none;transition:.25s;z-index:20;font-size:11px}.toast.show{opacity:1;transform:translate(-50%,0)}.mobile-head{display:none}
+@media(max-width:1050px){.sidebar{width:210px}.main{margin-left:210px}.content{padding:24px}.topbar{padding:0 24px}.statgrid{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.hero{grid-template-columns:1fr .55fr}.section-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.sidebar{width:auto;height:62px;inset:auto 0 0;padding:5px 7px;border:0;border-top:1px solid var(--line);display:block;background:#fff}.brand,.nav-label,.nav-foot{display:none}.nav{display:flex;justify-content:space-around}.nav button{padding:5px 4px;display:flex;flex-direction:column;gap:0;font-size:8px;min-width:51px}.ni{font-size:16px}.main{margin:0;padding-bottom:60px}.topbar{height:54px;padding:0 15px}.content{padding:18px 14px 32px}.title-row{align-items:flex-start;margin-bottom:16px}.title-row h1{font-size:22px}.title-row>.btn{padding:8px 10px;font-size:10px}.hero{display:block;padding:23px 20px;min-height:205px}.hero h2{font-size:24px}.hero-art{position:absolute;right:-26px;bottom:-9px;width:160px;opacity:.53;transform:scale(.78)}.hero-copy{max-width:80%}.hero p{font-size:11px}.hero-actions{position:relative;z-index:2}.statgrid{gap:8px;margin:12px 0}.stat{padding:12px}.stat strong{font-size:19px}.stat-top{font-size:9px}.stat-icon{width:24px;height:24px}.grid2,.two-col{grid-template-columns:1fr;gap:10px}.panel{padding:15px}.flow{grid-template-columns:1fr;gap:5px;margin:14px 0}.flow-node{display:flex;align-items:center;gap:10px;text-align:left}.flow-node .bubble{width:32px;height:32px;border-radius:10px;margin:0;font-size:14px}.flow-node small{margin-left:auto}.arrow{width:2px;height:11px;margin:-4px 0 -4px 15px}.arrow:after{display:none}.section-grid{grid-template-columns:1fr 1fr;gap:8px}.feature{padding:13px;min-height:140px}.feature h3{font-size:11px}.feature p{font-size:9px}.form-grid{grid-template-columns:1fr}.rag-banner{align-items:flex-start;gap:10px;padding:14px}.score-ring{width:55px;height:55px}.source-list{gap:6px}.map-row{flex-wrap:wrap;gap:12px}.map-row:before{display:none}.map-node{width:44%;}.title-row{gap:8px}.demo-tag{font-size:9px}.crumb{font-size:10px}.topright{gap:9px}.activity-row{grid-template-columns:26px 1fr auto}.match-table{font-size:9px}.extract-row{grid-template-columns:66px 1fr 34px}.riskbar{grid-template-columns:68px 1fr 27px}}
+
+/* Mobile-first readability and touch sizing */
+@media(max-width:700px){
+  body{font-size:14px;line-height:1.55;overflow-x:hidden}
+  .app{width:100%;height:100dvh;grid-template-rows:27px minmax(0,1fr) calc(62px + env(safe-area-inset-bottom))}
+  .main{min-width:0;min-height:0;padding:0;overflow-x:hidden}
+  .topbar{height:58px;padding:0 16px;gap:8px}
+  .crumb{display:flex;align-items:center;min-width:0;font-size:11px}
+  .crumb strong{font-size:14px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .icbc-app-mark{flex:0 0 auto}
+  .topright{gap:7px;min-width:0}
+  #userLabel{max-width:74px!important;font-size:10px!important}
+  .avatar{width:32px;height:32px;flex:0 0 auto}
+  .role-switch{min-height:40px;font-size:11px}
+  .content{width:100%;max-width:100%;padding:17px 16px calc(24px + env(safe-area-inset-bottom))}
+  .page{min-width:0;animation:none}
+  .eyebrow{font-size:10px;letter-spacing:.08em;line-height:1.35}
+  .title-row{display:flex;flex-direction:column;align-items:stretch;gap:9px;margin:2px 0 15px}
+  .title-row h1{font-size:21px;line-height:1.3;letter-spacing:0;margin:4px 0 5px;overflow-wrap:anywhere}
+  .subtitle{font-size:13px;line-height:1.55}
+  .title-row>.btn{width:100%;min-height:44px;padding:9px 12px;font-size:13px}
+  .btn{min-height:44px;padding:10px 14px;font-size:13px;border-radius:10px}
+  .btn.sm{min-height:40px;padding:8px 11px;font-size:12px}
+  .btn.ghost{box-shadow:none}
+  .card{border-radius:13px;box-shadow:0 2px 10px #1b2d4208}
+  .panel{padding:16px}
+  .panel-head{align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .panel-head h3,.section-title,.flow-head h3{font-size:15px;line-height:1.4}
+  .panel-head span{font-size:11px;line-height:1.4}
+  .callout{font-size:12px;line-height:1.65;padding:12px 13px}
+  .home-welcome{padding:8px 1px 14px}
+  .home-welcome h1{font-size:21px;line-height:1.35}
+  .home-welcome p{font-size:13px}
+  .home-account{padding:16px;border-radius:14px}
+  .home-account-label,.home-account-note{font-size:11px;line-height:1.5}
+  .home-account-value{font-size:21px;line-height:1.25}
+  .home-section{margin-top:18px}
+  .home-section-title{font-size:14px;margin-bottom:10px}
+  .home-section-title small{font-size:11px}
+  .home-shortcut{min-height:62px;padding:7px 2px;font-size:11px;line-height:1.35}
+  .home-shortcut i{width:38px;height:38px;margin-bottom:6px;font-size:17px}
+  .yaolian-entry{min-height:80px;gap:10px;padding:14px;border-radius:14px}
+  .yaolian-entry .entry-icon{width:42px;height:42px;flex:0 0 auto}
+  .yaolian-entry b{font-size:15px;line-height:1.35}
+  .yaolian-entry small{font-size:11px;line-height:1.4;margin-top:4px}
+  .entry-cta{min-height:42px;padding:8px 11px;font-size:12px}
+  .role-page{padding-top:3px}
+  .role-hero{padding:19px 17px;border-radius:14px}
+  .role-hero h1{font-size:22px;line-height:1.3;max-width:90%;margin:7px 0}
+  .role-hero p{font-size:12px;line-height:1.55;max-width:100%}
+  .role-hero p small{font-size:11px;line-height:1.5}
+  .role-cards{margin:12px 0;gap:9px}
+  .role-card{min-height:88px;padding:12px;grid-template-columns:42px minmax(0,1fr) auto;column-gap:10px;border-radius:12px}
+  .role-no{font-size:9px;letter-spacing:.04em}
+  .role-icon{width:38px;height:38px;font-size:18px}
+  .role-card h2{font-size:15px;line-height:1.35}
+  .role-card p{font-size:11px;line-height:1.45}
+  .role-enter{min-height:44px;padding-left:4px;font-size:0}
+  .role-enter span{font-size:18px}
+  .shared-rail{padding:13px}
+  .shared-note{font-size:10px;gap:8px;align-items:flex-start}
+  .shared-note b{font-size:13px!important;line-height:1.4}
+  .shared-rail .flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:11px 0 2px}
+  .shared-rail .flow-node{display:grid;grid-template-columns:32px minmax(0,1fr);align-content:center;gap:1px 8px;text-align:left;min-height:54px;padding:8px;border:1px solid var(--line);border-radius:10px}
+  .shared-rail .flow-node .bubble{grid-row:1/3;width:30px;height:30px;font-size:13px}
+  .shared-rail .flow-node b{font-size:11px;line-height:1.3}
+  .shared-rail .flow-node small{font-size:10px;line-height:1.3;margin:0}
+  .shared-rail .flow>.arrow{display:none}
+  .mobile-tabs{padding:4px 7px calc(7px + env(safe-area-inset-bottom));grid-template-columns:repeat(4,minmax(0,1fr));background:#fff}
+  .mobile-tabs button{min-width:0;min-height:48px;padding:5px 2px;gap:3px}
+  .mobile-tabs button span{font-size:18px}
+  .mobile-tabs button small{font-size:11px;line-height:1.25}
+  .home-indicator{bottom:max(4px,env(safe-area-inset-bottom));width:96px;height:3px}
+  .title-row{gap:10px}
+  .hero{padding:20px 17px;min-height:215px;border-radius:14px}
+  .hero h2{font-size:23px;line-height:1.3}
+  .hero-copy{max-width:94%;padding-right:26px}
+  .hero p{font-size:12px;line-height:1.55;max-width:95%}
+  .hero-art{right:-32px;bottom:-16px;width:145px;opacity:.25;pointer-events:none}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:13px;max-width:190px}
+  .hero-actions .btn{min-height:42px;padding:8px 11px;font-size:12px}
+  .statgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+  .stat{padding:12px;min-width:0;border-radius:12px}
+  .stat-top{font-size:11px;line-height:1.35;min-height:30px}
+  .stat-icon{display:none}
+  .stat strong{font-size:19px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}
+  .stat small{font-size:11px;line-height:1.4;display:block;margin-top:3px}
+  .trend{font-size:11px}
+  .grid2,.two-col{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:11px}
+  .chart-wrap{height:170px}
+  .chart-labels{font-size:11px;margin-top:2px}
+  .legend{font-size:11px;gap:12px}
+  .activity-row{grid-template-columns:34px minmax(0,1fr);gap:2px 10px;padding:12px 0;align-items:start}
+  .activity-icon{grid-row:1/3;width:32px;height:32px}
+  .activity-row b{font-size:13px;line-height:1.4}
+  .activity-row small{font-size:12px;line-height:1.4}
+  .activity-row>.status{grid-column:2;justify-self:start;margin-top:3px;font-size:11px;padding:4px 8px}
+  .status,.mini-flag{font-size:11px;line-height:1.35;padding:4px 8px;white-space:normal}
+  .section-grid{grid-template-columns:1fr;gap:9px}
+  .feature{min-height:0;padding:14px;border-radius:12px}
+  .feature h3{font-size:14px;margin:9px 0 4px}
+  .feature p{font-size:12px;line-height:1.5}
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .field label{font-size:12px;line-height:1.45;margin-bottom:6px}
+  .field input,.field select{min-height:48px;padding:11px 12px;font-size:15px;border-radius:10px}
+  .order-option{min-height:64px;padding:12px;gap:10px;align-items:flex-start}
+  .order-option b{font-size:12px;line-height:1.4}
+  .order-option small{font-size:11px;line-height:1.45;margin-top:3px}
+  .order-option>span{font-size:11px;white-space:nowrap}
+  .progressline{gap:5px;margin:14px 0;overflow:hidden}
+  .progressline span{font-size:10px;line-height:1.25;white-space:nowrap}
+  .progressline i{min-width:8px}
+  .upload{min-height:120px;padding:18px 14px}
+  .upload b{font-size:14px}
+  .upload small{font-size:11px;line-height:1.45}
+  .doc-area{padding:10px;min-height:0}
+  .paper{padding:14px 12px;min-height:230px}
+  .paper-head{font-size:14px}
+  .paper-line{font-size:12px;line-height:1.5;margin:10px 0}
+  .paper-stamp{font-size:10px}
+  .tech-tags{gap:6px}
+  .tech-tag{font-size:11px;line-height:1.3;padding:5px 8px}
+  .extract-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px;padding:11px 0;font-size:12px}
+  .extract-row b{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+  .extract-row span{font-size:12px;line-height:1.35}
+  .confidence{font-size:10px}
+  .match-table{display:block;max-width:100%;overflow-x:auto;white-space:nowrap;font-size:12px;-webkit-overflow-scrolling:touch}
+  .match-table th,.match-table td{font-size:12px;padding:10px 9px}
+  .rag-banner{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px;padding:14px}
+  .risk-score{gap:11px;align-items:center}
+  .score-ring{width:54px;height:54px;flex:0 0 auto}
+  .score-ring b{font-size:18px}
+  .risk-score .eyebrow{font-size:10px}
+  .risk-bars{gap:13px}
+  .riskbar{grid-template-columns:96px minmax(0,1fr) 28px;gap:8px;font-size:12px}
+  .riskbar b{font-size:12px}
+  .source-list{gap:8px}
+  .source{padding:12px;border-radius:10px}
+  .source-head{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;font-size:12px;line-height:1.4}
+  .source-head b{font-size:13px}
+  .cite{font-size:11px}
+  .source p{font-size:12px;line-height:1.5;margin-top:6px}
+  .report{font-size:13px;line-height:1.7;padding:14px;border-radius:10px}
+  .report h4{font-size:14px}
+  .map{padding:14px}
+  .map-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 8px;margin:12px 0 5px}
+  .map-node{width:auto;min-width:0}
+  .map-node b{font-size:12px;line-height:1.35}
+  .map-node small{font-size:11px;line-height:1.4}
+  .timeline{gap:15px;padding-left:17px}
+  .event b{font-size:13px;line-height:1.4}
+  .event small{font-size:12px;line-height:1.5}
+  .credit-score{padding:16px;gap:14px;align-items:flex-start}
+  .credit-number{font-size:36px}
+  .queue-row.header{display:none}
+  #bankqueue .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "material action" "flag action";align-items:center;gap:6px 10px;padding:12px 0}
+  #bankqueue .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #bankqueue .queue-row:not(.header)>:nth-child(2){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #bankqueue .queue-row:not(.header)>:nth-child(3){grid-area:material;font-size:12px;line-height:1.4}
+  #bankqueue .queue-row:not(.header)>:nth-child(4){grid-area:flag;justify-self:start}
+  #bankqueue .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:76px;min-height:42px}
+  #supplierorders .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "detail action" "status action";align-items:center;gap:6px 10px;padding:12px 0}
+  #supplierorders .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #supplierorders .queue-row:not(.header)>:nth-child(2){grid-area:detail;font-size:12px;line-height:1.4}
+  #supplierorders .queue-row:not(.header)>:nth-child(3){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #supplierorders .queue-row:not(.header)>:nth-child(4){grid-area:status;justify-self:start}
+  #supplierorders .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:88px;min-height:42px}
+  .queue-row b{font-size:13px;line-height:1.4}
+  .queue-row b small{font-size:11px;line-height:1.35}
+  #bankqueue .panel-head span{width:100%;font-size:11px}
+  .toast{bottom:calc(72px + env(safe-area-inset-bottom));max-width:calc(100% - 32px);font-size:13px;line-height:1.45}
+  button,[role=button],.order-option,.source,.home-shortcut{touch-action:manipulation}
+  button:focus-visible,[role=button]:focus-visible{outline:3px solid #b3081b55;outline-offset:2px}
+}
+@media(max-width:375px){
+  .content{padding-left:13px;padding-right:13px}
+  .topbar{padding-left:12px;padding-right:12px}
+  .crumb strong{max-width:100px}
+  .yaolian-entry{gap:8px;padding:12px}
+  .yaolian-entry small{font-size:10px}
+  .entry-cta{padding:7px 8px;font-size:11px}
+  .role-card{grid-template-columns:36px minmax(0,1fr) auto;column-gap:8px;padding:10px}
+  .role-icon{width:34px;height:34px}
+  .role-card p{font-size:10px}
+  .stat strong{font-size:17px}
+  .riskbar{grid-template-columns:84px minmax(0,1fr) 25px;gap:7px}
+  #bankqueue .queue-row:not(.header)>:nth-child(2),#supplierorders .queue-row:not(.header)>:nth-child(3){font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+<style>
+.nav button[hidden]{display:none}.role-page{padding-top:12px}.role-hero{padding:28px 32px;border-radius:18px;background:linear-gradient(116deg,#9d081a,#c51c30);color:white;position:relative;overflow:hidden}.role-hero:after{content:"三端\A协作";white-space:pre;position:absolute;right:6%;top:2px;font-size:72px;line-height:1.08;font-weight:800;letter-spacing:5px;color:#ffffff0e}.role-hero .eyebrow{color:#ffd6db}.role-hero h1{font-size:31px;max-width:720px;line-height:1.3;margin:8px 0}.role-hero p{color:#ffe5e8;font-size:13px;margin:0}.role-hero p small{font-size:10px;color:#ffd4da}.role-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:18px 0}.role-card{padding:20px;position:relative;overflow:hidden;min-height:220px;cursor:pointer;transition:.22s}.role-card:hover{transform:translateY(-4px);border-color:#d88791;box-shadow:0 18px 36px #75172317}.role-no{font-size:10px;color:#a1aab5;letter-spacing:1px}.role-icon{width:47px;height:47px;margin:14px 0 10px;border-radius:14px;background:#fff0f2;color:var(--red);display:grid;place-items:center;font-size:22px}.role-card h2{font-size:18px;margin:0 0 5px}.role-card p{font-size:11px;color:var(--muted);margin:0 0 15px}.role-enter{display:flex;justify-content:space-between;align-items:center;color:var(--red);font-size:11px;font-weight:700;border-top:1px solid #f0f2f4;padding-top:12px}.shared-rail{padding:17px 22px}.shared-rail .flow{max-width:930px;margin:14px auto 4px}.shared-note{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted)}.role-switch{background:#fff;border:1px solid #ead8da;color:var(--red);padding:7px 10px;border-radius:8px;font-size:10px;font-weight:700}.queue-row{display:grid;grid-template-columns:1.2fr 1fr .8fr .7fr auto;gap:9px;align-items:center;padding:13px 10px;border-bottom:1px solid #eff1f4;font-size:10px}.queue-row.header{color:#9ba5b1;font-size:9px;background:#fafbfc;border-radius:7px}.queue-row b{font-size:10px}.role-kpi{display:flex;align-items:baseline;gap:8px}.role-kpi strong{font-size:24px}.role-kpi small{font-size:10px;color:#8995a2}.mini-flag{padding:4px 7px;background:#fff5e4;color:#a66b00;border-radius:20px;font-size:9px}
+@media(max-width:700px){.role-hero{padding:23px 20px}.role-hero h1{font-size:23px;max-width:88%}.role-hero:after{font-size:42px;right:-4px;top:6px}.role-cards{grid-template-columns:1fr;gap:9px;margin:12px 0}.role-card{min-height:0;padding:15px;display:grid;grid-template-columns:45px 1fr auto;align-items:center;column-gap:12px}.role-no{grid-column:2;grid-row:1;font-size:8px}.role-icon{grid-column:1;grid-row:1/4;width:43px;height:43px;margin:0}.role-card h2{grid-column:2;grid-row:2;font-size:15px}.role-card p{grid-column:2;grid-row:3;margin:0;font-size:9px}.role-enter{grid-column:3;grid-row:1/4;border:0;padding:0;font-size:0}.role-enter span{font-size:20px}.shared-rail{padding:13px}.shared-rail .flow{margin:10px 0}.shared-rail .flow-node b{font-size:9px}.queue-row{grid-template-columns:1fr auto;gap:4px 10px}.queue-row>*:nth-child(n+3){display:none}.role-switch{padding:6px 7px;font-size:9px}}
+
+/* Mobile-first readability and touch sizing */
+@media(max-width:700px){
+  body{font-size:14px;line-height:1.55;overflow-x:hidden}
+  .app{width:100%;height:100dvh;grid-template-rows:27px minmax(0,1fr) calc(62px + env(safe-area-inset-bottom))}
+  .main{min-width:0;min-height:0;padding:0;overflow-x:hidden}
+  .topbar{height:58px;padding:0 16px;gap:8px}
+  .crumb{display:flex;align-items:center;min-width:0;font-size:11px}
+  .crumb strong{font-size:14px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .icbc-app-mark{flex:0 0 auto}
+  .topright{gap:7px;min-width:0}
+  #userLabel{max-width:74px!important;font-size:10px!important}
+  .avatar{width:32px;height:32px;flex:0 0 auto}
+  .role-switch{min-height:40px;font-size:11px}
+  .content{width:100%;max-width:100%;padding:17px 16px calc(24px + env(safe-area-inset-bottom))}
+  .page{min-width:0;animation:none}
+  .eyebrow{font-size:10px;letter-spacing:.08em;line-height:1.35}
+  .title-row{display:flex;flex-direction:column;align-items:stretch;gap:9px;margin:2px 0 15px}
+  .title-row h1{font-size:21px;line-height:1.3;letter-spacing:0;margin:4px 0 5px;overflow-wrap:anywhere}
+  .subtitle{font-size:13px;line-height:1.55}
+  .title-row>.btn{width:100%;min-height:44px;padding:9px 12px;font-size:13px}
+  .btn{min-height:44px;padding:10px 14px;font-size:13px;border-radius:10px}
+  .btn.sm{min-height:40px;padding:8px 11px;font-size:12px}
+  .btn.ghost{box-shadow:none}
+  .card{border-radius:13px;box-shadow:0 2px 10px #1b2d4208}
+  .panel{padding:16px}
+  .panel-head{align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .panel-head h3,.section-title,.flow-head h3{font-size:15px;line-height:1.4}
+  .panel-head span{font-size:11px;line-height:1.4}
+  .callout{font-size:12px;line-height:1.65;padding:12px 13px}
+  .home-welcome{padding:8px 1px 14px}
+  .home-welcome h1{font-size:21px;line-height:1.35}
+  .home-welcome p{font-size:13px}
+  .home-account{padding:16px;border-radius:14px}
+  .home-account-label,.home-account-note{font-size:11px;line-height:1.5}
+  .home-account-value{font-size:21px;line-height:1.25}
+  .home-section{margin-top:18px}
+  .home-section-title{font-size:14px;margin-bottom:10px}
+  .home-section-title small{font-size:11px}
+  .home-shortcut{min-height:62px;padding:7px 2px;font-size:11px;line-height:1.35}
+  .home-shortcut i{width:38px;height:38px;margin-bottom:6px;font-size:17px}
+  .yaolian-entry{min-height:80px;gap:10px;padding:14px;border-radius:14px}
+  .yaolian-entry .entry-icon{width:42px;height:42px;flex:0 0 auto}
+  .yaolian-entry b{font-size:15px;line-height:1.35}
+  .yaolian-entry small{font-size:11px;line-height:1.4;margin-top:4px}
+  .entry-cta{min-height:42px;padding:8px 11px;font-size:12px}
+  .role-page{padding-top:3px}
+  .role-hero{padding:19px 17px;border-radius:14px}
+  .role-hero h1{font-size:22px;line-height:1.3;max-width:90%;margin:7px 0}
+  .role-hero p{font-size:12px;line-height:1.55;max-width:100%}
+  .role-hero p small{font-size:11px;line-height:1.5}
+  .role-cards{margin:12px 0;gap:9px}
+  .role-card{min-height:88px;padding:12px;grid-template-columns:42px minmax(0,1fr) auto;column-gap:10px;border-radius:12px}
+  .role-no{font-size:9px;letter-spacing:.04em}
+  .role-icon{width:38px;height:38px;font-size:18px}
+  .role-card h2{font-size:15px;line-height:1.35}
+  .role-card p{font-size:11px;line-height:1.45}
+  .role-enter{min-height:44px;padding-left:4px;font-size:0}
+  .role-enter span{font-size:18px}
+  .shared-rail{padding:13px}
+  .shared-note{font-size:10px;gap:8px;align-items:flex-start}
+  .shared-note b{font-size:13px!important;line-height:1.4}
+  .shared-rail .flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:11px 0 2px}
+  .shared-rail .flow-node{display:grid;grid-template-columns:32px minmax(0,1fr);align-content:center;gap:1px 8px;text-align:left;min-height:54px;padding:8px;border:1px solid var(--line);border-radius:10px}
+  .shared-rail .flow-node .bubble{grid-row:1/3;width:30px;height:30px;font-size:13px}
+  .shared-rail .flow-node b{font-size:11px;line-height:1.3}
+  .shared-rail .flow-node small{font-size:10px;line-height:1.3;margin:0}
+  .shared-rail .flow>.arrow{display:none}
+  .mobile-tabs{padding:4px 7px calc(7px + env(safe-area-inset-bottom));grid-template-columns:repeat(4,minmax(0,1fr));background:#fff}
+  .mobile-tabs button{min-width:0;min-height:48px;padding:5px 2px;gap:3px}
+  .mobile-tabs button span{font-size:18px}
+  .mobile-tabs button small{font-size:11px;line-height:1.25}
+  .home-indicator{bottom:max(4px,env(safe-area-inset-bottom));width:96px;height:3px}
+  .title-row{gap:10px}
+  .hero{padding:20px 17px;min-height:215px;border-radius:14px}
+  .hero h2{font-size:23px;line-height:1.3}
+  .hero-copy{max-width:94%;padding-right:26px}
+  .hero p{font-size:12px;line-height:1.55;max-width:95%}
+  .hero-art{right:-32px;bottom:-16px;width:145px;opacity:.25;pointer-events:none}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:13px;max-width:190px}
+  .hero-actions .btn{min-height:42px;padding:8px 11px;font-size:12px}
+  .statgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+  .stat{padding:12px;min-width:0;border-radius:12px}
+  .stat-top{font-size:11px;line-height:1.35;min-height:30px}
+  .stat-icon{display:none}
+  .stat strong{font-size:19px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}
+  .stat small{font-size:11px;line-height:1.4;display:block;margin-top:3px}
+  .trend{font-size:11px}
+  .grid2,.two-col{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:11px}
+  .chart-wrap{height:170px}
+  .chart-labels{font-size:11px;margin-top:2px}
+  .legend{font-size:11px;gap:12px}
+  .activity-row{grid-template-columns:34px minmax(0,1fr);gap:2px 10px;padding:12px 0;align-items:start}
+  .activity-icon{grid-row:1/3;width:32px;height:32px}
+  .activity-row b{font-size:13px;line-height:1.4}
+  .activity-row small{font-size:12px;line-height:1.4}
+  .activity-row>.status{grid-column:2;justify-self:start;margin-top:3px;font-size:11px;padding:4px 8px}
+  .status,.mini-flag{font-size:11px;line-height:1.35;padding:4px 8px;white-space:normal}
+  .section-grid{grid-template-columns:1fr;gap:9px}
+  .feature{min-height:0;padding:14px;border-radius:12px}
+  .feature h3{font-size:14px;margin:9px 0 4px}
+  .feature p{font-size:12px;line-height:1.5}
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .field label{font-size:12px;line-height:1.45;margin-bottom:6px}
+  .field input,.field select{min-height:48px;padding:11px 12px;font-size:15px;border-radius:10px}
+  .order-option{min-height:64px;padding:12px;gap:10px;align-items:flex-start}
+  .order-option b{font-size:12px;line-height:1.4}
+  .order-option small{font-size:11px;line-height:1.45;margin-top:3px}
+  .order-option>span{font-size:11px;white-space:nowrap}
+  .progressline{gap:5px;margin:14px 0;overflow:hidden}
+  .progressline span{font-size:10px;line-height:1.25;white-space:nowrap}
+  .progressline i{min-width:8px}
+  .upload{min-height:120px;padding:18px 14px}
+  .upload b{font-size:14px}
+  .upload small{font-size:11px;line-height:1.45}
+  .doc-area{padding:10px;min-height:0}
+  .paper{padding:14px 12px;min-height:230px}
+  .paper-head{font-size:14px}
+  .paper-line{font-size:12px;line-height:1.5;margin:10px 0}
+  .paper-stamp{font-size:10px}
+  .tech-tags{gap:6px}
+  .tech-tag{font-size:11px;line-height:1.3;padding:5px 8px}
+  .extract-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px;padding:11px 0;font-size:12px}
+  .extract-row b{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+  .extract-row span{font-size:12px;line-height:1.35}
+  .confidence{font-size:10px}
+  .match-table{display:block;max-width:100%;overflow-x:auto;white-space:nowrap;font-size:12px;-webkit-overflow-scrolling:touch}
+  .match-table th,.match-table td{font-size:12px;padding:10px 9px}
+  .rag-banner{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px;padding:14px}
+  .risk-score{gap:11px;align-items:center}
+  .score-ring{width:54px;height:54px;flex:0 0 auto}
+  .score-ring b{font-size:18px}
+  .risk-score .eyebrow{font-size:10px}
+  .risk-bars{gap:13px}
+  .riskbar{grid-template-columns:96px minmax(0,1fr) 28px;gap:8px;font-size:12px}
+  .riskbar b{font-size:12px}
+  .source-list{gap:8px}
+  .source{padding:12px;border-radius:10px}
+  .source-head{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;font-size:12px;line-height:1.4}
+  .source-head b{font-size:13px}
+  .cite{font-size:11px}
+  .source p{font-size:12px;line-height:1.5;margin-top:6px}
+  .report{font-size:13px;line-height:1.7;padding:14px;border-radius:10px}
+  .report h4{font-size:14px}
+  .map{padding:14px}
+  .map-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 8px;margin:12px 0 5px}
+  .map-node{width:auto;min-width:0}
+  .map-node b{font-size:12px;line-height:1.35}
+  .map-node small{font-size:11px;line-height:1.4}
+  .timeline{gap:15px;padding-left:17px}
+  .event b{font-size:13px;line-height:1.4}
+  .event small{font-size:12px;line-height:1.5}
+  .credit-score{padding:16px;gap:14px;align-items:flex-start}
+  .credit-number{font-size:36px}
+  .queue-row.header{display:none}
+  #bankqueue .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "material action" "flag action";align-items:center;gap:6px 10px;padding:12px 0}
+  #bankqueue .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #bankqueue .queue-row:not(.header)>:nth-child(2){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #bankqueue .queue-row:not(.header)>:nth-child(3){grid-area:material;font-size:12px;line-height:1.4}
+  #bankqueue .queue-row:not(.header)>:nth-child(4){grid-area:flag;justify-self:start}
+  #bankqueue .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:76px;min-height:42px}
+  #supplierorders .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "detail action" "status action";align-items:center;gap:6px 10px;padding:12px 0}
+  #supplierorders .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #supplierorders .queue-row:not(.header)>:nth-child(2){grid-area:detail;font-size:12px;line-height:1.4}
+  #supplierorders .queue-row:not(.header)>:nth-child(3){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #supplierorders .queue-row:not(.header)>:nth-child(4){grid-area:status;justify-self:start}
+  #supplierorders .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:88px;min-height:42px}
+  .queue-row b{font-size:13px;line-height:1.4}
+  .queue-row b small{font-size:11px;line-height:1.35}
+  #bankqueue .panel-head span{width:100%;font-size:11px}
+  .toast{bottom:calc(72px + env(safe-area-inset-bottom));max-width:calc(100% - 32px);font-size:13px;line-height:1.45}
+  button,[role=button],.order-option,.source,.home-shortcut{touch-action:manipulation}
+  button:focus-visible,[role=button]:focus-visible{outline:3px solid #b3081b55;outline-offset:2px}
+}
+@media(max-width:375px){
+  .content{padding-left:13px;padding-right:13px}
+  .topbar{padding-left:12px;padding-right:12px}
+  .crumb strong{max-width:100px}
+  .yaolian-entry{gap:8px;padding:12px}
+  .yaolian-entry small{font-size:10px}
+  .entry-cta{padding:7px 8px;font-size:11px}
+  .role-card{grid-template-columns:36px minmax(0,1fr) auto;column-gap:8px;padding:10px}
+  .role-icon{width:34px;height:34px}
+  .role-card p{font-size:10px}
+  .stat strong{font-size:17px}
+  .riskbar{grid-template-columns:84px minmax(0,1fr) 25px;gap:7px}
+  #bankqueue .queue-row:not(.header)>:nth-child(2),#supplierorders .queue-row:not(.header)>:nth-child(3){font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+<style>
+body{min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 42%,#596271 0,#303946 43%,#202833 100%);overflow:auto}.app{width:390px;height:min(844px,calc(100vh - 28px));min-height:0;margin:14px auto;border:8px solid #15181c;border-radius:38px;box-shadow:0 28px 90px #0008;overflow:hidden;display:grid;grid-template-rows:27px minmax(0,1fr) 62px;background:#f4f6f8;position:relative}.sidebar{display:none!important}.phone-status{display:flex;align-items:center;justify-content:space-between;padding:0 17px;background:var(--red);color:#fff;font-size:10px;font-weight:700;position:relative;letter-spacing:.2px}.phone-status:after{content:"";position:absolute;width:78px;height:19px;border-radius:15px;background:#131518;left:50%;top:2px;transform:translateX(-50%)}.phone-status .sys{letter-spacing:2px}.main{margin:0;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 0 4px}.topbar{height:58px;padding:0 13px;background:var(--red);color:#fff;border:0;position:sticky;top:0}.crumb{font-size:9px;color:#ffe0e4;line-height:1.2}.crumb strong{display:block;margin:3px 0 0;color:#fff;font-size:13px}.topright{gap:6px}.demo-tag{display:none}#userLabel{color:#ffe6e9!important;font-size:9px!important;max-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.avatar{width:27px;height:27px;background:#fff;color:var(--red);font-size:12px}.role-switch{background:#ffffff18;color:#fff;border-color:#ffffff66;padding:5px 7px;font-size:9px}.content{max-width:none;padding:15px 13px 24px}.mobile-tabs{display:grid;grid-template-columns:repeat(4,1fr);align-items:center;background:#fff;border-top:1px solid #e7ebef;box-shadow:0 -5px 16px #14253a08;padding:3px 5px 5px;z-index:15}.mobile-tabs[hidden]{display:none}.mobile-tabs button{border:0;background:none;color:#8d98a5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:5px 2px}.mobile-tabs button span{font-size:17px;line-height:1.1}.mobile-tabs button small{font-size:8px}.mobile-tabs button.active{color:var(--red);font-weight:700}.home-indicator{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:105px;height:3px;border-radius:4px;background:#15171a;z-index:18;pointer-events:none}.title-row{margin-top:2px}.role-page{padding-top:2px}.role-hero{padding:19px 18px;border-radius:13px}.role-hero h1{font-size:21px;max-width:90%}.role-hero p{font-size:10px;max-width:92%}.role-hero p small{font-size:8px}.role-cards{margin:10px 0;gap:7px}.role-card{border-radius:11px;padding:10px 12px;min-height:0}.role-card p{font-size:8px}.role-icon{width:37px;height:37px;font-size:18px}.shared-rail{padding:10px}.shared-note{font-size:8px}.shared-note b{font-size:10px!important}.shared-rail .flow{gap:3px;margin:8px 0 0}.shared-rail .flow-node .bubble{width:27px;height:27px;font-size:11px}.shared-rail .flow-node b{font-size:8px}.shared-rail .flow-node small{font-size:7px}.callout{font-size:8px;padding:8px 10px;margin-top:9px}.hero{min-height:190px;padding:18px;border-radius:13px}.hero h2{font-size:22px}.hero p{font-size:10px}.hero-actions{margin-top:12px}.hero-art{transform:scale(.68);right:-35px}.statgrid{gap:7px;margin:10px 0}.stat{padding:10px;border-radius:11px}.stat strong{font-size:17px;margin-top:6px}.stat-top{font-size:8px}.stat small{font-size:8px}.stat-icon{width:23px;height:23px}.panel{padding:12px;border-radius:11px}.panel-head h3{font-size:11px}.panel-head span{font-size:8px}.grid2{gap:8px;margin-top:8px}.chart-wrap{height:125px}.flow-card{padding:12px;margin-top:8px}.feature{border-radius:11px}.page .title-row h1{font-size:20px}.page .subtitle{font-size:9px}.page .eyebrow{font-size:8px}.page .btn{font-size:9px;padding:8px 10px}.page .btn.sm{font-size:8px;padding:7px 9px}.progressline{margin:11px 0}.progressline span{font-size:7px}.phone-shell-label{display:block}
+@media(max-width:700px){body{display:block;background:#f5f7fa}.app{width:100vw;height:100dvh;max-height:none;margin:0;border:0;border-radius:0;box-shadow:none;grid-template-rows:27px minmax(0,1fr) 62px}.phone-status:after{display:none}.content{padding-left:14px;padding-right:14px}.topbar{height:56px}}
+
+/* Mobile-first readability and touch sizing */
+@media(max-width:700px){
+  body{font-size:14px;line-height:1.55;overflow-x:hidden}
+  .app{width:100%;height:100dvh;grid-template-rows:27px minmax(0,1fr) calc(62px + env(safe-area-inset-bottom))}
+  .main{min-width:0;min-height:0;padding:0;overflow-x:hidden}
+  .topbar{height:58px;padding:0 16px;gap:8px}
+  .crumb{display:flex;align-items:center;min-width:0;font-size:11px}
+  .crumb strong{font-size:14px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .icbc-app-mark{flex:0 0 auto}
+  .topright{gap:7px;min-width:0}
+  #userLabel{max-width:74px!important;font-size:10px!important}
+  .avatar{width:32px;height:32px;flex:0 0 auto}
+  .role-switch{min-height:40px;font-size:11px}
+  .content{width:100%;max-width:100%;padding:17px 16px calc(24px + env(safe-area-inset-bottom))}
+  .page{min-width:0;animation:none}
+  .eyebrow{font-size:10px;letter-spacing:.08em;line-height:1.35}
+  .title-row{display:flex;flex-direction:column;align-items:stretch;gap:9px;margin:2px 0 15px}
+  .title-row h1{font-size:21px;line-height:1.3;letter-spacing:0;margin:4px 0 5px;overflow-wrap:anywhere}
+  .subtitle{font-size:13px;line-height:1.55}
+  .title-row>.btn{width:100%;min-height:44px;padding:9px 12px;font-size:13px}
+  .btn{min-height:44px;padding:10px 14px;font-size:13px;border-radius:10px}
+  .btn.sm{min-height:40px;padding:8px 11px;font-size:12px}
+  .btn.ghost{box-shadow:none}
+  .card{border-radius:13px;box-shadow:0 2px 10px #1b2d4208}
+  .panel{padding:16px}
+  .panel-head{align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .panel-head h3,.section-title,.flow-head h3{font-size:15px;line-height:1.4}
+  .panel-head span{font-size:11px;line-height:1.4}
+  .callout{font-size:12px;line-height:1.65;padding:12px 13px}
+  .home-welcome{padding:8px 1px 14px}
+  .home-welcome h1{font-size:21px;line-height:1.35}
+  .home-welcome p{font-size:13px}
+  .home-account{padding:16px;border-radius:14px}
+  .home-account-label,.home-account-note{font-size:11px;line-height:1.5}
+  .home-account-value{font-size:21px;line-height:1.25}
+  .home-section{margin-top:18px}
+  .home-section-title{font-size:14px;margin-bottom:10px}
+  .home-section-title small{font-size:11px}
+  .home-shortcut{min-height:62px;padding:7px 2px;font-size:11px;line-height:1.35}
+  .home-shortcut i{width:38px;height:38px;margin-bottom:6px;font-size:17px}
+  .yaolian-entry{min-height:80px;gap:10px;padding:14px;border-radius:14px}
+  .yaolian-entry .entry-icon{width:42px;height:42px;flex:0 0 auto}
+  .yaolian-entry b{font-size:15px;line-height:1.35}
+  .yaolian-entry small{font-size:11px;line-height:1.4;margin-top:4px}
+  .entry-cta{min-height:42px;padding:8px 11px;font-size:12px}
+  .role-page{padding-top:3px}
+  .role-hero{padding:19px 17px;border-radius:14px}
+  .role-hero h1{font-size:22px;line-height:1.3;max-width:90%;margin:7px 0}
+  .role-hero p{font-size:12px;line-height:1.55;max-width:100%}
+  .role-hero p small{font-size:11px;line-height:1.5}
+  .role-cards{margin:12px 0;gap:9px}
+  .role-card{min-height:88px;padding:12px;grid-template-columns:42px minmax(0,1fr) auto;column-gap:10px;border-radius:12px}
+  .role-no{font-size:9px;letter-spacing:.04em}
+  .role-icon{width:38px;height:38px;font-size:18px}
+  .role-card h2{font-size:15px;line-height:1.35}
+  .role-card p{font-size:11px;line-height:1.45}
+  .role-enter{min-height:44px;padding-left:4px;font-size:0}
+  .role-enter span{font-size:18px}
+  .shared-rail{padding:13px}
+  .shared-note{font-size:10px;gap:8px;align-items:flex-start}
+  .shared-note b{font-size:13px!important;line-height:1.4}
+  .shared-rail .flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:11px 0 2px}
+  .shared-rail .flow-node{display:grid;grid-template-columns:32px minmax(0,1fr);align-content:center;gap:1px 8px;text-align:left;min-height:54px;padding:8px;border:1px solid var(--line);border-radius:10px}
+  .shared-rail .flow-node .bubble{grid-row:1/3;width:30px;height:30px;font-size:13px}
+  .shared-rail .flow-node b{font-size:11px;line-height:1.3}
+  .shared-rail .flow-node small{font-size:10px;line-height:1.3;margin:0}
+  .shared-rail .flow>.arrow{display:none}
+  .mobile-tabs{padding:4px 7px calc(7px + env(safe-area-inset-bottom));grid-template-columns:repeat(4,minmax(0,1fr));background:#fff}
+  .mobile-tabs button{min-width:0;min-height:48px;padding:5px 2px;gap:3px}
+  .mobile-tabs button span{font-size:18px}
+  .mobile-tabs button small{font-size:11px;line-height:1.25}
+  .home-indicator{bottom:max(4px,env(safe-area-inset-bottom));width:96px;height:3px}
+  .title-row{gap:10px}
+  .hero{padding:20px 17px;min-height:215px;border-radius:14px}
+  .hero h2{font-size:23px;line-height:1.3}
+  .hero-copy{max-width:94%;padding-right:26px}
+  .hero p{font-size:12px;line-height:1.55;max-width:95%}
+  .hero-art{right:-32px;bottom:-16px;width:145px;opacity:.25;pointer-events:none}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:13px;max-width:190px}
+  .hero-actions .btn{min-height:42px;padding:8px 11px;font-size:12px}
+  .statgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+  .stat{padding:12px;min-width:0;border-radius:12px}
+  .stat-top{font-size:11px;line-height:1.35;min-height:30px}
+  .stat-icon{display:none}
+  .stat strong{font-size:19px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}
+  .stat small{font-size:11px;line-height:1.4;display:block;margin-top:3px}
+  .trend{font-size:11px}
+  .grid2,.two-col{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:11px}
+  .chart-wrap{height:170px}
+  .chart-labels{font-size:11px;margin-top:2px}
+  .legend{font-size:11px;gap:12px}
+  .activity-row{grid-template-columns:34px minmax(0,1fr);gap:2px 10px;padding:12px 0;align-items:start}
+  .activity-icon{grid-row:1/3;width:32px;height:32px}
+  .activity-row b{font-size:13px;line-height:1.4}
+  .activity-row small{font-size:12px;line-height:1.4}
+  .activity-row>.status{grid-column:2;justify-self:start;margin-top:3px;font-size:11px;padding:4px 8px}
+  .status,.mini-flag{font-size:11px;line-height:1.35;padding:4px 8px;white-space:normal}
+  .section-grid{grid-template-columns:1fr;gap:9px}
+  .feature{min-height:0;padding:14px;border-radius:12px}
+  .feature h3{font-size:14px;margin:9px 0 4px}
+  .feature p{font-size:12px;line-height:1.5}
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .field label{font-size:12px;line-height:1.45;margin-bottom:6px}
+  .field input,.field select{min-height:48px;padding:11px 12px;font-size:15px;border-radius:10px}
+  .order-option{min-height:64px;padding:12px;gap:10px;align-items:flex-start}
+  .order-option b{font-size:12px;line-height:1.4}
+  .order-option small{font-size:11px;line-height:1.45;margin-top:3px}
+  .order-option>span{font-size:11px;white-space:nowrap}
+  .progressline{gap:5px;margin:14px 0;overflow:hidden}
+  .progressline span{font-size:10px;line-height:1.25;white-space:nowrap}
+  .progressline i{min-width:8px}
+  .upload{min-height:120px;padding:18px 14px}
+  .upload b{font-size:14px}
+  .upload small{font-size:11px;line-height:1.45}
+  .doc-area{padding:10px;min-height:0}
+  .paper{padding:14px 12px;min-height:230px}
+  .paper-head{font-size:14px}
+  .paper-line{font-size:12px;line-height:1.5;margin:10px 0}
+  .paper-stamp{font-size:10px}
+  .tech-tags{gap:6px}
+  .tech-tag{font-size:11px;line-height:1.3;padding:5px 8px}
+  .extract-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px;padding:11px 0;font-size:12px}
+  .extract-row b{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+  .extract-row span{font-size:12px;line-height:1.35}
+  .confidence{font-size:10px}
+  .match-table{display:block;max-width:100%;overflow-x:auto;white-space:nowrap;font-size:12px;-webkit-overflow-scrolling:touch}
+  .match-table th,.match-table td{font-size:12px;padding:10px 9px}
+  .rag-banner{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px;padding:14px}
+  .risk-score{gap:11px;align-items:center}
+  .score-ring{width:54px;height:54px;flex:0 0 auto}
+  .score-ring b{font-size:18px}
+  .risk-score .eyebrow{font-size:10px}
+  .risk-bars{gap:13px}
+  .riskbar{grid-template-columns:96px minmax(0,1fr) 28px;gap:8px;font-size:12px}
+  .riskbar b{font-size:12px}
+  .source-list{gap:8px}
+  .source{padding:12px;border-radius:10px}
+  .source-head{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;font-size:12px;line-height:1.4}
+  .source-head b{font-size:13px}
+  .cite{font-size:11px}
+  .source p{font-size:12px;line-height:1.5;margin-top:6px}
+  .report{font-size:13px;line-height:1.7;padding:14px;border-radius:10px}
+  .report h4{font-size:14px}
+  .map{padding:14px}
+  .map-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 8px;margin:12px 0 5px}
+  .map-node{width:auto;min-width:0}
+  .map-node b{font-size:12px;line-height:1.35}
+  .map-node small{font-size:11px;line-height:1.4}
+  .timeline{gap:15px;padding-left:17px}
+  .event b{font-size:13px;line-height:1.4}
+  .event small{font-size:12px;line-height:1.5}
+  .credit-score{padding:16px;gap:14px;align-items:flex-start}
+  .credit-number{font-size:36px}
+  .queue-row.header{display:none}
+  #bankqueue .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "material action" "flag action";align-items:center;gap:6px 10px;padding:12px 0}
+  #bankqueue .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #bankqueue .queue-row:not(.header)>:nth-child(2){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #bankqueue .queue-row:not(.header)>:nth-child(3){grid-area:material;font-size:12px;line-height:1.4}
+  #bankqueue .queue-row:not(.header)>:nth-child(4){grid-area:flag;justify-self:start}
+  #bankqueue .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:76px;min-height:42px}
+  #supplierorders .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "detail action" "status action";align-items:center;gap:6px 10px;padding:12px 0}
+  #supplierorders .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #supplierorders .queue-row:not(.header)>:nth-child(2){grid-area:detail;font-size:12px;line-height:1.4}
+  #supplierorders .queue-row:not(.header)>:nth-child(3){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #supplierorders .queue-row:not(.header)>:nth-child(4){grid-area:status;justify-self:start}
+  #supplierorders .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:88px;min-height:42px}
+  .queue-row b{font-size:13px;line-height:1.4}
+  .queue-row b small{font-size:11px;line-height:1.35}
+  #bankqueue .panel-head span{width:100%;font-size:11px}
+  .toast{bottom:calc(72px + env(safe-area-inset-bottom));max-width:calc(100% - 32px);font-size:13px;line-height:1.45}
+  button,[role=button],.order-option,.source,.home-shortcut{touch-action:manipulation}
+  button:focus-visible,[role=button]:focus-visible{outline:3px solid #b3081b55;outline-offset:2px}
+}
+@media(max-width:375px){
+  .content{padding-left:13px;padding-right:13px}
+  .topbar{padding-left:12px;padding-right:12px}
+  .crumb strong{max-width:100px}
+  .yaolian-entry{gap:8px;padding:12px}
+  .yaolian-entry small{font-size:10px}
+  .entry-cta{padding:7px 8px;font-size:11px}
+  .role-card{grid-template-columns:36px minmax(0,1fr) auto;column-gap:8px;padding:10px}
+  .role-icon{width:34px;height:34px}
+  .role-card p{font-size:10px}
+  .stat strong{font-size:17px}
+  .riskbar{grid-template-columns:84px minmax(0,1fr) 25px;gap:7px}
+  #bankqueue .queue-row:not(.header)>:nth-child(2),#supplierorders .queue-row:not(.header)>:nth-child(3){font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+<style>
+.crumb{display:flex;align-items:center;gap:7px;min-width:0;flex:1}.icbc-app-mark{width:24px;height:24px;border-radius:50%;background:#fff;color:var(--red);display:grid;place-items:center;font-family:serif;font-weight:900;font-size:15px;flex:none}.app-brand-text{display:flex;flex-direction:column;color:#fff;font-size:9px;white-space:nowrap}.app-brand-text small{font-size:7px;color:#ffdade}.crumb strong{margin:0 0 0 auto!important;text-align:right;white-space:nowrap;font-size:10px!important;min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:700px){.main{height:auto}.app-brand-text{display:none}.crumb strong{margin-left:6px!important;max-width:116px}.topright{flex:0 0 auto;gap:5px}#userLabel{max-width:54px!important}.role-switch{white-space:nowrap;flex:none}}
+@media(max-width:375px){.crumb strong{max-width:86px}#userLabel{display:none!important}.role-switch{padding:5px 6px;font-size:8px}.content{padding-left:11px;padding-right:11px}}
+
+/* Mobile-first readability and touch sizing */
+@media(max-width:700px){
+  body{font-size:14px;line-height:1.55;overflow-x:hidden}
+  .app{width:100%;height:100dvh;grid-template-rows:27px minmax(0,1fr) calc(62px + env(safe-area-inset-bottom))}
+  .main{min-width:0;min-height:0;padding:0;overflow-x:hidden}
+  .topbar{height:58px;padding:0 16px;gap:8px}
+  .crumb{display:flex;align-items:center;min-width:0;font-size:11px}
+  .crumb strong{font-size:14px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .icbc-app-mark{flex:0 0 auto}
+  .topright{gap:7px;min-width:0}
+  #userLabel{max-width:74px!important;font-size:10px!important}
+  .avatar{width:32px;height:32px;flex:0 0 auto}
+  .role-switch{min-height:40px;font-size:11px}
+  .content{width:100%;max-width:100%;padding:17px 16px calc(24px + env(safe-area-inset-bottom))}
+  .page{min-width:0;animation:none}
+  .eyebrow{font-size:10px;letter-spacing:.08em;line-height:1.35}
+  .title-row{display:flex;flex-direction:column;align-items:stretch;gap:9px;margin:2px 0 15px}
+  .title-row h1{font-size:21px;line-height:1.3;letter-spacing:0;margin:4px 0 5px;overflow-wrap:anywhere}
+  .subtitle{font-size:13px;line-height:1.55}
+  .title-row>.btn{width:100%;min-height:44px;padding:9px 12px;font-size:13px}
+  .btn{min-height:44px;padding:10px 14px;font-size:13px;border-radius:10px}
+  .btn.sm{min-height:40px;padding:8px 11px;font-size:12px}
+  .btn.ghost{box-shadow:none}
+  .card{border-radius:13px;box-shadow:0 2px 10px #1b2d4208}
+  .panel{padding:16px}
+  .panel-head{align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .panel-head h3,.section-title,.flow-head h3{font-size:15px;line-height:1.4}
+  .panel-head span{font-size:11px;line-height:1.4}
+  .callout{font-size:12px;line-height:1.65;padding:12px 13px}
+  .home-welcome{padding:8px 1px 14px}
+  .home-welcome h1{font-size:21px;line-height:1.35}
+  .home-welcome p{font-size:13px}
+  .home-account{padding:16px;border-radius:14px}
+  .home-account-label,.home-account-note{font-size:11px;line-height:1.5}
+  .home-account-value{font-size:21px;line-height:1.25}
+  .home-section{margin-top:18px}
+  .home-section-title{font-size:14px;margin-bottom:10px}
+  .home-section-title small{font-size:11px}
+  .home-shortcut{min-height:62px;padding:7px 2px;font-size:11px;line-height:1.35}
+  .home-shortcut i{width:38px;height:38px;margin-bottom:6px;font-size:17px}
+  .yaolian-entry{min-height:80px;gap:10px;padding:14px;border-radius:14px}
+  .yaolian-entry .entry-icon{width:42px;height:42px;flex:0 0 auto}
+  .yaolian-entry b{font-size:15px;line-height:1.35}
+  .yaolian-entry small{font-size:11px;line-height:1.4;margin-top:4px}
+  .entry-cta{min-height:42px;padding:8px 11px;font-size:12px}
+  .role-page{padding-top:3px}
+  .role-hero{padding:19px 17px;border-radius:14px}
+  .role-hero h1{font-size:22px;line-height:1.3;max-width:90%;margin:7px 0}
+  .role-hero p{font-size:12px;line-height:1.55;max-width:100%}
+  .role-hero p small{font-size:11px;line-height:1.5}
+  .role-cards{margin:12px 0;gap:9px}
+  .role-card{min-height:88px;padding:12px;grid-template-columns:42px minmax(0,1fr) auto;column-gap:10px;border-radius:12px}
+  .role-no{font-size:9px;letter-spacing:.04em}
+  .role-icon{width:38px;height:38px;font-size:18px}
+  .role-card h2{font-size:15px;line-height:1.35}
+  .role-card p{font-size:11px;line-height:1.45}
+  .role-enter{min-height:44px;padding-left:4px;font-size:0}
+  .role-enter span{font-size:18px}
+  .shared-rail{padding:13px}
+  .shared-note{font-size:10px;gap:8px;align-items:flex-start}
+  .shared-note b{font-size:13px!important;line-height:1.4}
+  .shared-rail .flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:11px 0 2px}
+  .shared-rail .flow-node{display:grid;grid-template-columns:32px minmax(0,1fr);align-content:center;gap:1px 8px;text-align:left;min-height:54px;padding:8px;border:1px solid var(--line);border-radius:10px}
+  .shared-rail .flow-node .bubble{grid-row:1/3;width:30px;height:30px;font-size:13px}
+  .shared-rail .flow-node b{font-size:11px;line-height:1.3}
+  .shared-rail .flow-node small{font-size:10px;line-height:1.3;margin:0}
+  .shared-rail .flow>.arrow{display:none}
+  .mobile-tabs{padding:4px 7px calc(7px + env(safe-area-inset-bottom));grid-template-columns:repeat(4,minmax(0,1fr));background:#fff}
+  .mobile-tabs button{min-width:0;min-height:48px;padding:5px 2px;gap:3px}
+  .mobile-tabs button span{font-size:18px}
+  .mobile-tabs button small{font-size:11px;line-height:1.25}
+  .home-indicator{bottom:max(4px,env(safe-area-inset-bottom));width:96px;height:3px}
+  .title-row{gap:10px}
+  .hero{padding:20px 17px;min-height:215px;border-radius:14px}
+  .hero h2{font-size:23px;line-height:1.3}
+  .hero-copy{max-width:94%;padding-right:26px}
+  .hero p{font-size:12px;line-height:1.55;max-width:95%}
+  .hero-art{right:-32px;bottom:-16px;width:145px;opacity:.25;pointer-events:none}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:13px;max-width:190px}
+  .hero-actions .btn{min-height:42px;padding:8px 11px;font-size:12px}
+  .statgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+  .stat{padding:12px;min-width:0;border-radius:12px}
+  .stat-top{font-size:11px;line-height:1.35;min-height:30px}
+  .stat-icon{display:none}
+  .stat strong{font-size:19px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}
+  .stat small{font-size:11px;line-height:1.4;display:block;margin-top:3px}
+  .trend{font-size:11px}
+  .grid2,.two-col{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:11px}
+  .chart-wrap{height:170px}
+  .chart-labels{font-size:11px;margin-top:2px}
+  .legend{font-size:11px;gap:12px}
+  .activity-row{grid-template-columns:34px minmax(0,1fr);gap:2px 10px;padding:12px 0;align-items:start}
+  .activity-icon{grid-row:1/3;width:32px;height:32px}
+  .activity-row b{font-size:13px;line-height:1.4}
+  .activity-row small{font-size:12px;line-height:1.4}
+  .activity-row>.status{grid-column:2;justify-self:start;margin-top:3px;font-size:11px;padding:4px 8px}
+  .status,.mini-flag{font-size:11px;line-height:1.35;padding:4px 8px;white-space:normal}
+  .section-grid{grid-template-columns:1fr;gap:9px}
+  .feature{min-height:0;padding:14px;border-radius:12px}
+  .feature h3{font-size:14px;margin:9px 0 4px}
+  .feature p{font-size:12px;line-height:1.5}
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .field label{font-size:12px;line-height:1.45;margin-bottom:6px}
+  .field input,.field select{min-height:48px;padding:11px 12px;font-size:15px;border-radius:10px}
+  .order-option{min-height:64px;padding:12px;gap:10px;align-items:flex-start}
+  .order-option b{font-size:12px;line-height:1.4}
+  .order-option small{font-size:11px;line-height:1.45;margin-top:3px}
+  .order-option>span{font-size:11px;white-space:nowrap}
+  .progressline{gap:5px;margin:14px 0;overflow:hidden}
+  .progressline span{font-size:10px;line-height:1.25;white-space:nowrap}
+  .progressline i{min-width:8px}
+  .upload{min-height:120px;padding:18px 14px}
+  .upload b{font-size:14px}
+  .upload small{font-size:11px;line-height:1.45}
+  .doc-area{padding:10px;min-height:0}
+  .paper{padding:14px 12px;min-height:230px}
+  .paper-head{font-size:14px}
+  .paper-line{font-size:12px;line-height:1.5;margin:10px 0}
+  .paper-stamp{font-size:10px}
+  .tech-tags{gap:6px}
+  .tech-tag{font-size:11px;line-height:1.3;padding:5px 8px}
+  .extract-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px;padding:11px 0;font-size:12px}
+  .extract-row b{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+  .extract-row span{font-size:12px;line-height:1.35}
+  .confidence{font-size:10px}
+  .match-table{display:block;max-width:100%;overflow-x:auto;white-space:nowrap;font-size:12px;-webkit-overflow-scrolling:touch}
+  .match-table th,.match-table td{font-size:12px;padding:10px 9px}
+  .rag-banner{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px;padding:14px}
+  .risk-score{gap:11px;align-items:center}
+  .score-ring{width:54px;height:54px;flex:0 0 auto}
+  .score-ring b{font-size:18px}
+  .risk-score .eyebrow{font-size:10px}
+  .risk-bars{gap:13px}
+  .riskbar{grid-template-columns:96px minmax(0,1fr) 28px;gap:8px;font-size:12px}
+  .riskbar b{font-size:12px}
+  .source-list{gap:8px}
+  .source{padding:12px;border-radius:10px}
+  .source-head{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;font-size:12px;line-height:1.4}
+  .source-head b{font-size:13px}
+  .cite{font-size:11px}
+  .source p{font-size:12px;line-height:1.5;margin-top:6px}
+  .report{font-size:13px;line-height:1.7;padding:14px;border-radius:10px}
+  .report h4{font-size:14px}
+  .map{padding:14px}
+  .map-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 8px;margin:12px 0 5px}
+  .map-node{width:auto;min-width:0}
+  .map-node b{font-size:12px;line-height:1.35}
+  .map-node small{font-size:11px;line-height:1.4}
+  .timeline{gap:15px;padding-left:17px}
+  .event b{font-size:13px;line-height:1.4}
+  .event small{font-size:12px;line-height:1.5}
+  .credit-score{padding:16px;gap:14px;align-items:flex-start}
+  .credit-number{font-size:36px}
+  .queue-row.header{display:none}
+  #bankqueue .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "material action" "flag action";align-items:center;gap:6px 10px;padding:12px 0}
+  #bankqueue .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #bankqueue .queue-row:not(.header)>:nth-child(2){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #bankqueue .queue-row:not(.header)>:nth-child(3){grid-area:material;font-size:12px;line-height:1.4}
+  #bankqueue .queue-row:not(.header)>:nth-child(4){grid-area:flag;justify-self:start}
+  #bankqueue .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:76px;min-height:42px}
+  #supplierorders .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "detail action" "status action";align-items:center;gap:6px 10px;padding:12px 0}
+  #supplierorders .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #supplierorders .queue-row:not(.header)>:nth-child(2){grid-area:detail;font-size:12px;line-height:1.4}
+  #supplierorders .queue-row:not(.header)>:nth-child(3){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #supplierorders .queue-row:not(.header)>:nth-child(4){grid-area:status;justify-self:start}
+  #supplierorders .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:88px;min-height:42px}
+  .queue-row b{font-size:13px;line-height:1.4}
+  .queue-row b small{font-size:11px;line-height:1.35}
+  #bankqueue .panel-head span{width:100%;font-size:11px}
+  .toast{bottom:calc(72px + env(safe-area-inset-bottom));max-width:calc(100% - 32px);font-size:13px;line-height:1.45}
+  button,[role=button],.order-option,.source,.home-shortcut{touch-action:manipulation}
+  button:focus-visible,[role=button]:focus-visible{outline:3px solid #b3081b55;outline-offset:2px}
+}
+@media(max-width:375px){
+  .content{padding-left:13px;padding-right:13px}
+  .topbar{padding-left:12px;padding-right:12px}
+  .crumb strong{max-width:100px}
+  .yaolian-entry{gap:8px;padding:12px}
+  .yaolian-entry small{font-size:10px}
+  .entry-cta{padding:7px 8px;font-size:11px}
+  .role-card{grid-template-columns:36px minmax(0,1fr) auto;column-gap:8px;padding:10px}
+  .role-icon{width:34px;height:34px}
+  .role-card p{font-size:10px}
+  .stat strong{font-size:17px}
+  .riskbar{grid-template-columns:84px minmax(0,1fr) 25px;gap:7px}
+  #bankqueue .queue-row:not(.header)>:nth-child(2),#supplierorders .queue-row:not(.header)>:nth-child(3){font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+<style>
+.bank-home{padding-top:4px}.home-welcome{padding:7px 3px 14px}.home-welcome .eyebrow{color:#8793a2}.home-welcome h1{font-size:21px;margin:4px 0}.home-welcome p{font-size:10px;color:#8591a0;margin:0}.home-account{padding:15px 16px;border-radius:14px;background:linear-gradient(125deg,#fff,#f7f9fc);border:1px solid #e7ebef;position:relative;overflow:hidden}.home-account:after{content:"";position:absolute;width:120px;height:120px;border:1px solid #e9edf2;border-radius:50%;right:-22px;top:-42px;box-shadow:0 0 0 18px #ffffffaa}.home-account-label{font-size:9px;color:#778495}.home-account-value{font-size:19px;font-weight:800;letter-spacing:1px;margin:5px 0 2px}.home-account-note{font-size:8px;color:#98a2ae}.home-section{margin-top:14px}.home-section-title{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:700;margin-bottom:9px}.home-section-title small{font-weight:400;color:#929daa;font-size:8px}.home-shortcuts{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}.home-shortcut{text-align:center;padding:7px 2px;color:#536174;font-size:8px}.home-shortcut i{display:grid;place-items:center;width:34px;height:34px;margin:0 auto 5px;border-radius:12px;background:#f2f5f8;color:#526b84;font-style:normal;font-size:16px}.yaolian-entry{display:flex;align-items:center;gap:11px;padding:14px;border-radius:14px;background:linear-gradient(110deg,#ab0b20,#d01a30);color:white;box-shadow:0 8px 22px #a7091e29;text-decoration:none;cursor:pointer;position:relative;overflow:hidden}.yaolian-entry:after{content:"药";position:absolute;right:18px;top:-17px;font-size:94px;font-weight:900;color:#ffffff12}.yaolian-entry .entry-icon{width:40px;height:40px;display:grid;place-items:center;border:1px solid #ffffff72;border-radius:13px;font-family:serif;font-weight:900;font-size:20px;z-index:1}.yaolian-entry .entry-copy{flex:1;z-index:1}.yaolian-entry b{font-size:12px;display:block}.yaolian-entry small{display:block;color:#ffe0e4;font-size:8px;margin-top:3px}.entry-cta{display:inline-flex;align-items:center;gap:4px;padding:7px 10px;border:1px solid #ffffff8c;border-radius:999px;background:#ffffff1c;color:#fff;font-size:9px;font-weight:700;white-space:nowrap;z-index:2}.entry-cta b{font-size:14px;line-height:10px}.yaolian-entry:hover .entry-cta{background:#ffffff32}.home-footnote{font-size:8px;color:#9aa3ae;text-align:center;padding:9px 0 0}
+
+/* Mobile-first readability and touch sizing */
+@media(max-width:700px){
+  body{font-size:14px;line-height:1.55;overflow-x:hidden}
+  .app{width:100%;height:100dvh;grid-template-rows:27px minmax(0,1fr) calc(62px + env(safe-area-inset-bottom))}
+  .main{min-width:0;min-height:0;padding:0;overflow-x:hidden}
+  .topbar{height:58px;padding:0 16px;gap:8px}
+  .crumb{display:flex;align-items:center;min-width:0;font-size:11px}
+  .crumb strong{font-size:14px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .icbc-app-mark{flex:0 0 auto}
+  .topright{gap:7px;min-width:0}
+  #userLabel{max-width:74px!important;font-size:10px!important}
+  .avatar{width:32px;height:32px;flex:0 0 auto}
+  .role-switch{min-height:40px;font-size:11px}
+  .content{width:100%;max-width:100%;padding:17px 16px calc(24px + env(safe-area-inset-bottom))}
+  .page{min-width:0;animation:none}
+  .eyebrow{font-size:10px;letter-spacing:.08em;line-height:1.35}
+  .title-row{display:flex;flex-direction:column;align-items:stretch;gap:9px;margin:2px 0 15px}
+  .title-row h1{font-size:21px;line-height:1.3;letter-spacing:0;margin:4px 0 5px;overflow-wrap:anywhere}
+  .subtitle{font-size:13px;line-height:1.55}
+  .title-row>.btn{width:100%;min-height:44px;padding:9px 12px;font-size:13px}
+  .btn{min-height:44px;padding:10px 14px;font-size:13px;border-radius:10px}
+  .btn.sm{min-height:40px;padding:8px 11px;font-size:12px}
+  .btn.ghost{box-shadow:none}
+  .card{border-radius:13px;box-shadow:0 2px 10px #1b2d4208}
+  .panel{padding:16px}
+  .panel-head{align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .panel-head h3,.section-title,.flow-head h3{font-size:15px;line-height:1.4}
+  .panel-head span{font-size:11px;line-height:1.4}
+  .callout{font-size:12px;line-height:1.65;padding:12px 13px}
+  .home-welcome{padding:8px 1px 14px}
+  .home-welcome h1{font-size:21px;line-height:1.35}
+  .home-welcome p{font-size:13px}
+  .home-account{padding:16px;border-radius:14px}
+  .home-account-label,.home-account-note{font-size:11px;line-height:1.5}
+  .home-account-value{font-size:21px;line-height:1.25}
+  .home-section{margin-top:18px}
+  .home-section-title{font-size:14px;margin-bottom:10px}
+  .home-section-title small{font-size:11px}
+  .home-shortcut{min-height:62px;padding:7px 2px;font-size:11px;line-height:1.35}
+  .home-shortcut i{width:38px;height:38px;margin-bottom:6px;font-size:17px}
+  .yaolian-entry{min-height:80px;gap:10px;padding:14px;border-radius:14px}
+  .yaolian-entry .entry-icon{width:42px;height:42px;flex:0 0 auto}
+  .yaolian-entry b{font-size:15px;line-height:1.35}
+  .yaolian-entry small{font-size:11px;line-height:1.4;margin-top:4px}
+  .entry-cta{min-height:42px;padding:8px 11px;font-size:12px}
+  .role-page{padding-top:3px}
+  .role-hero{padding:19px 17px;border-radius:14px}
+  .role-hero h1{font-size:22px;line-height:1.3;max-width:90%;margin:7px 0}
+  .role-hero p{font-size:12px;line-height:1.55;max-width:100%}
+  .role-hero p small{font-size:11px;line-height:1.5}
+  .role-cards{margin:12px 0;gap:9px}
+  .role-card{min-height:88px;padding:12px;grid-template-columns:42px minmax(0,1fr) auto;column-gap:10px;border-radius:12px}
+  .role-no{font-size:9px;letter-spacing:.04em}
+  .role-icon{width:38px;height:38px;font-size:18px}
+  .role-card h2{font-size:15px;line-height:1.35}
+  .role-card p{font-size:11px;line-height:1.45}
+  .role-enter{min-height:44px;padding-left:4px;font-size:0}
+  .role-enter span{font-size:18px}
+  .shared-rail{padding:13px}
+  .shared-note{font-size:10px;gap:8px;align-items:flex-start}
+  .shared-note b{font-size:13px!important;line-height:1.4}
+  .shared-rail .flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:11px 0 2px}
+  .shared-rail .flow-node{display:grid;grid-template-columns:32px minmax(0,1fr);align-content:center;gap:1px 8px;text-align:left;min-height:54px;padding:8px;border:1px solid var(--line);border-radius:10px}
+  .shared-rail .flow-node .bubble{grid-row:1/3;width:30px;height:30px;font-size:13px}
+  .shared-rail .flow-node b{font-size:11px;line-height:1.3}
+  .shared-rail .flow-node small{font-size:10px;line-height:1.3;margin:0}
+  .shared-rail .flow>.arrow{display:none}
+  .mobile-tabs{padding:4px 7px calc(7px + env(safe-area-inset-bottom));grid-template-columns:repeat(4,minmax(0,1fr));background:#fff}
+  .mobile-tabs button{min-width:0;min-height:48px;padding:5px 2px;gap:3px}
+  .mobile-tabs button span{font-size:18px}
+  .mobile-tabs button small{font-size:11px;line-height:1.25}
+  .home-indicator{bottom:max(4px,env(safe-area-inset-bottom));width:96px;height:3px}
+  .title-row{gap:10px}
+  .hero{padding:20px 17px;min-height:215px;border-radius:14px}
+  .hero h2{font-size:23px;line-height:1.3}
+  .hero-copy{max-width:94%;padding-right:26px}
+  .hero p{font-size:12px;line-height:1.55;max-width:95%}
+  .hero-art{right:-32px;bottom:-16px;width:145px;opacity:.25;pointer-events:none}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:7px;margin-top:13px;max-width:190px}
+  .hero-actions .btn{min-height:42px;padding:8px 11px;font-size:12px}
+  .statgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+  .stat{padding:12px;min-width:0;border-radius:12px}
+  .stat-top{font-size:11px;line-height:1.35;min-height:30px}
+  .stat-icon{display:none}
+  .stat strong{font-size:19px;line-height:1.25;margin-top:5px;overflow-wrap:anywhere}
+  .stat small{font-size:11px;line-height:1.4;display:block;margin-top:3px}
+  .trend{font-size:11px}
+  .grid2,.two-col{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:11px}
+  .chart-wrap{height:170px}
+  .chart-labels{font-size:11px;margin-top:2px}
+  .legend{font-size:11px;gap:12px}
+  .activity-row{grid-template-columns:34px minmax(0,1fr);gap:2px 10px;padding:12px 0;align-items:start}
+  .activity-icon{grid-row:1/3;width:32px;height:32px}
+  .activity-row b{font-size:13px;line-height:1.4}
+  .activity-row small{font-size:12px;line-height:1.4}
+  .activity-row>.status{grid-column:2;justify-self:start;margin-top:3px;font-size:11px;padding:4px 8px}
+  .status,.mini-flag{font-size:11px;line-height:1.35;padding:4px 8px;white-space:normal}
+  .section-grid{grid-template-columns:1fr;gap:9px}
+  .feature{min-height:0;padding:14px;border-radius:12px}
+  .feature h3{font-size:14px;margin:9px 0 4px}
+  .feature p{font-size:12px;line-height:1.5}
+  .form-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .field label{font-size:12px;line-height:1.45;margin-bottom:6px}
+  .field input,.field select{min-height:48px;padding:11px 12px;font-size:15px;border-radius:10px}
+  .order-option{min-height:64px;padding:12px;gap:10px;align-items:flex-start}
+  .order-option b{font-size:12px;line-height:1.4}
+  .order-option small{font-size:11px;line-height:1.45;margin-top:3px}
+  .order-option>span{font-size:11px;white-space:nowrap}
+  .progressline{gap:5px;margin:14px 0;overflow:hidden}
+  .progressline span{font-size:10px;line-height:1.25;white-space:nowrap}
+  .progressline i{min-width:8px}
+  .upload{min-height:120px;padding:18px 14px}
+  .upload b{font-size:14px}
+  .upload small{font-size:11px;line-height:1.45}
+  .doc-area{padding:10px;min-height:0}
+  .paper{padding:14px 12px;min-height:230px}
+  .paper-head{font-size:14px}
+  .paper-line{font-size:12px;line-height:1.5;margin:10px 0}
+  .paper-stamp{font-size:10px}
+  .tech-tags{gap:6px}
+  .tech-tag{font-size:11px;line-height:1.3;padding:5px 8px}
+  .extract-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px;padding:11px 0;font-size:12px}
+  .extract-row b{font-size:12px;line-height:1.35;overflow-wrap:anywhere}
+  .extract-row span{font-size:12px;line-height:1.35}
+  .confidence{font-size:10px}
+  .match-table{display:block;max-width:100%;overflow-x:auto;white-space:nowrap;font-size:12px;-webkit-overflow-scrolling:touch}
+  .match-table th,.match-table td{font-size:12px;padding:10px 9px}
+  .rag-banner{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px;padding:14px}
+  .risk-score{gap:11px;align-items:center}
+  .score-ring{width:54px;height:54px;flex:0 0 auto}
+  .score-ring b{font-size:18px}
+  .risk-score .eyebrow{font-size:10px}
+  .risk-bars{gap:13px}
+  .riskbar{grid-template-columns:96px minmax(0,1fr) 28px;gap:8px;font-size:12px}
+  .riskbar b{font-size:12px}
+  .source-list{gap:8px}
+  .source{padding:12px;border-radius:10px}
+  .source-head{display:grid;grid-template-columns:minmax(0,1fr);gap:3px;font-size:12px;line-height:1.4}
+  .source-head b{font-size:13px}
+  .cite{font-size:11px}
+  .source p{font-size:12px;line-height:1.5;margin-top:6px}
+  .report{font-size:13px;line-height:1.7;padding:14px;border-radius:10px}
+  .report h4{font-size:14px}
+  .map{padding:14px}
+  .map-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 8px;margin:12px 0 5px}
+  .map-node{width:auto;min-width:0}
+  .map-node b{font-size:12px;line-height:1.35}
+  .map-node small{font-size:11px;line-height:1.4}
+  .timeline{gap:15px;padding-left:17px}
+  .event b{font-size:13px;line-height:1.4}
+  .event small{font-size:12px;line-height:1.5}
+  .credit-score{padding:16px;gap:14px;align-items:flex-start}
+  .credit-number{font-size:36px}
+  .queue-row.header{display:none}
+  #bankqueue .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "material action" "flag action";align-items:center;gap:6px 10px;padding:12px 0}
+  #bankqueue .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #bankqueue .queue-row:not(.header)>:nth-child(2){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #bankqueue .queue-row:not(.header)>:nth-child(3){grid-area:material;font-size:12px;line-height:1.4}
+  #bankqueue .queue-row:not(.header)>:nth-child(4){grid-area:flag;justify-self:start}
+  #bankqueue .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:76px;min-height:42px}
+  #supplierorders .queue-row:not(.header){grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"identity amount" "detail action" "status action";align-items:center;gap:6px 10px;padding:12px 0}
+  #supplierorders .queue-row:not(.header)>:nth-child(1){grid-area:identity;min-width:0}
+  #supplierorders .queue-row:not(.header)>:nth-child(2){grid-area:detail;font-size:12px;line-height:1.4}
+  #supplierorders .queue-row:not(.header)>:nth-child(3){grid-area:amount;text-align:right;font-size:13px;font-weight:700;white-space:nowrap}
+  #supplierorders .queue-row:not(.header)>:nth-child(4){grid-area:status;justify-self:start}
+  #supplierorders .queue-row:not(.header)>:nth-child(5){grid-area:action;min-width:88px;min-height:42px}
+  .queue-row b{font-size:13px;line-height:1.4}
+  .queue-row b small{font-size:11px;line-height:1.35}
+  #bankqueue .panel-head span{width:100%;font-size:11px}
+  .toast{bottom:calc(72px + env(safe-area-inset-bottom));max-width:calc(100% - 32px);font-size:13px;line-height:1.45}
+  button,[role=button],.order-option,.source,.home-shortcut{touch-action:manipulation}
+  button:focus-visible,[role=button]:focus-visible{outline:3px solid #b3081b55;outline-offset:2px}
+}
+@media(max-width:375px){
+  .content{padding-left:13px;padding-right:13px}
+  .topbar{padding-left:12px;padding-right:12px}
+  .crumb strong{max-width:100px}
+  .yaolian-entry{gap:8px;padding:12px}
+  .yaolian-entry small{font-size:10px}
+  .entry-cta{padding:7px 8px;font-size:11px}
+  .role-card{grid-template-columns:36px minmax(0,1fr) auto;column-gap:8px;padding:10px}
+  .role-icon{width:34px;height:34px}
+  .role-card p{font-size:10px}
+  .stat strong{font-size:17px}
+  .riskbar{grid-template-columns:84px minmax(0,1fr) 25px;gap:7px}
+  #bankqueue .queue-row:not(.header)>:nth-child(2),#supplierorders .queue-row:not(.header)>:nth-child(3){font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body><div class="app"><div class="phone-status"><span id="clock">09:41</span><span class="sys">● 5G ▰ 87%</span></div>
+<aside class="sidebar"><div class="brand"><div class="brandmark">工</div><div><b>工e药链</b><small>ICBC MACAU · FINANCE</small></div></div><div class="nav-label" id="navLabel">选择服务身份</div><nav class="nav"><button data-personas="pharmacy" class="active" data-page="overview"><span class="ni">⌂</span>服务总览</button><button data-personas="pharmacy" data-page="apply"><span class="ni">＋</span>融资申请</button><button data-personas="pharmacy" data-page="ocr"><span class="ni">▤</span>订单材料核验</button><button data-personas="pharmacy" data-page="flow"><span class="ni">⇄</span>交易履约闭环</button><button data-personas="pharmacy" data-page="credit"><span class="ni">↗</span>信用成长</button><button data-personas="bank" data-page="bankhome" hidden><span class="ni">⌂</span>审查工作台</button><button data-personas="bank" data-page="bankqueue" hidden><span class="ni">▤</span>融资审查队列</button><button data-personas="bank" data-page="risk" hidden><span class="ni">◈</span>风险报告</button><button data-personas="bank" data-page="flow" hidden><span class="ni">⇄</span>交易证据链</button><button data-personas="supplier" data-page="supplierhome" hidden><span class="ni">⌂</span>经营工作台</button><button data-personas="supplier" data-page="supplierorders" hidden><span class="ni">▤</span>订单履约</button><button data-personas="supplier" data-page="flow" hidden><span class="ni">⇄</span>交易进度</button></nav><div class="nav-foot"><b>一单联三端 · 交易全程可追</b>药房发起、银行审查、经销商履约，协同完成一笔融资。</div></aside>
+<main class="main"><header class="topbar"><div class="crumb"><span class="icbc-app-mark">工</span><span class="app-brand-text">中国工商银行（澳门）<small>手机银行 · 服务专区</small></span><strong id="crumbTitle">手机银行首页</strong></div><div class="topright"><span class="demo-tag">虚拟平台演示 · 示例数据</span><span id="userLabel" style="color:#8b96a5;font-size:11px">欢迎体验</span><button class="role-switch" id="roleSwitch" data-go="roles" hidden>切换身份</button><div class="avatar" id="avatar">工</div></div></header><div class="content">
+<section class="page active bank-home" id="apphome"><div class="home-welcome"><div class="eyebrow">ICBC MACAU · MOBILE BANKING</div><h1>您好，欢迎使用工银澳门</h1><p>安全、便捷的移动金融服务</p></div><div class="home-account"><div class="home-account-label">账户总览 · 演示状态</div><div class="home-account-value">MOP　••••　••••</div><div class="home-account-note">账户信息仅作手机银行首页样式示意</div></div><div class="home-section"><div class="home-section-title">常用服务 <small>更多　›</small></div><div class="home-shortcuts"><div class="home-shortcut" onclick="toast('手机银行常用服务示意')"><i>⇄</i>转账汇款</div><div class="home-shortcut" onclick="toast('手机银行常用服务示意')"><i>▤</i>缴费服务</div><div class="home-shortcut" onclick="toast('手机银行常用服务示意')"><i>◎</i>账户查询</div><div class="home-shortcut" onclick="toast('手机银行常用服务示意')"><i>⌕</i>外汇服务</div></div></div><div class="home-section"><div class="home-section-title">特色金融服务 <small>服务专区</small></div><div class="yaolian-entry" data-go="roles" role="button" tabindex="0" aria-label="进入工e药链专区"><div class="entry-icon">药</div><div class="entry-copy"><b>工e药链</b><small>澳门医药零售智慧融资服务</small><small>真实订单进货融资 · 交易履约闭环</small></div><span class="entry-cta">进入 <b>›</b></span></div></div><div class="home-section"><div class="home-section-title">普惠金融 <small>面向小微经营场景</small></div><div class="card panel" style="padding:12px"><div style="font-size:10px;font-weight:700">让融资服务连接真实经营</div><div class="subtitle" style="font-size:8px;margin-top:4px">进入工e药链专区，体验药房、银行与经销商协同流程。</div></div></div><div class="home-footnote">虚拟演示页面 · 非工商银行实际手机银行界面</div></section>
+<section class="page role-page" id="roles"><div class="role-hero"><div class="eyebrow">ONE TRADE · THREE ROLES</div><h1>一笔真实交易，三端协同完成融资闭环</h1><p>从药房采购需求，到银行审查决策，再到经销商发货履约。请选择演示身份，进入对应工作台。<br><small>正式使用时按登录账号与机构权限加载数据；多家药房共用同一平台，不需要各自建立网站。</small></p></div><div class="role-cards"><article class="card role-card" data-role="pharmacy"><span class="role-no">01 / MERCHANT</span><div class="role-icon">药</div><h2>药房端</h2><p>发起进货融资、提交采购订单、跟踪审批与信用成长</p><div class="role-enter"><span>进入药房工作台</span><span>→</span></div></article><article class="card role-card" data-role="bank"><span class="role-no">02 / BANK</span><div class="role-icon">◈</div><h2>银行端</h2><p>管理融资审查队列、查看OCR核验结果、生成可追溯风险报告</p><div class="role-enter"><span>进入银行审查工作台</span><span>→</span></div></article><article class="card role-card" data-role="supplier"><span class="role-no">03 / DISTRIBUTOR</span><div class="role-icon">▦</div><h2>经销商端</h2><p>确认采购订单、回传发货与交付信息、核对受托支付进度</p><div class="role-enter"><span>进入经销商履约工作台</span><span>→</span></div></article></div><div class="card shared-rail"><div class="shared-note"><b style="font-size:13px;color:var(--ink)">三个工作台，共享一条可信交易链</b><span>分角色呈现 · 同一笔示例订单</span></div><div class="flow"><div class="flow-node done"><div class="bubble">药</div><b>药房下单</b><small>提出融资需求</small></div><div class="arrow"></div><div class="flow-node done"><div class="bubble">⌕</div><b>材料核验</b><small>OCR + 字段提取</small></div><div class="arrow"></div><div class="flow-node"><div class="bubble">◈</div><b>银行审查</b><small>RAG + 证据引用</small></div><div class="arrow"></div><div class="flow-node"><div class="bubble">▦</div><b>经销商履约</b><small>发货与收款</small></div></div></div><div class="callout">当前为项目方案虚拟演示。页面中的企业、订单及经营指标均为模拟示例，不代表工商银行真实产品或业务数据。</div></section>
+<section class="page" id="overview"><div class="title-row"><div><div class="eyebrow">TRADE FINANCE · MACAU</div><h1>让每一笔真实采购，都成为融资的依据</h1><div class="subtitle">面向澳门医药零售的供应链金融服务专区</div></div><button class="btn" data-go="apply">发起融资申请　→</button></div>
+<div class="hero"><div class="hero-copy"><div class="eyebrow">工商银行澳门分行 · 虚拟专区概念</div><h2>工e药链<br>让药品流转有迹，让经营信用可见</h2><p>采购订单、检验材料与履约记录串成可信交易链，帮助药房更顺畅地申请进货融资。</p><div class="hero-actions"><button class="btn" data-go="apply">立即申请</button><button class="btn ghost" data-go="flow">查看交易闭环</button></div></div><div class="hero-art"><div class="orbit"></div><div class="orbit o2"></div><div class="node n1">▤</div><div class="node n2">⌕</div><div class="node n3">↻</div><div class="node n4">药</div><div class="hub">工</div></div></div>
+<div class="statgrid"><div class="card stat"><div class="stat-top">可用授信额度 <span class="stat-icon">◇</span></div><strong>MOP 300,000</strong><small>演示账户 · 以银行审批为准</small></div><div class="card stat"><div class="stat-top">近30天采购交易额 <span class="stat-icon">▤</span></div><strong>MOP 486,200</strong><small class="trend">↑ 8.6% 较上月</small></div><div class="card stat"><div class="stat-top">订单履约率 <span class="stat-icon">✓</span></div><strong>98.2%</strong><small>已核验 17 / 18 笔</small></div><div class="card stat"><div class="stat-top">履约信用状态 <span class="stat-icon">↗</span></div><strong style="color:var(--green)">良好</strong><small>交易与还款记录持续沉淀</small></div></div>
+<div class="grid2"><div class="card panel"><div class="panel-head"><h3>采购经营趋势</h3><span>近 6 个月 · 模拟数据</span></div><div class="legend"><span><i></i>采购额</span><span><i class="gray"></i>履约订单</span></div><div class="chart-wrap"><svg viewBox="0 0 680 190" preserveAspectRatio="none" aria-label="采购经营趋势图"><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#bb1328" stop-opacity=".19"/><stop offset="1" stop-color="#bb1328" stop-opacity="0"/></linearGradient></defs><g stroke="#edf0f3" stroke-width="1"><path d="M30 32H665M30 76H665M30 120H665M30 164H665"/></g><path d="M30 142 C85 136 90 112 140 117 S207 91 250 103 S320 73 360 83 S425 49 470 63 S535 38 575 50 S630 21 665 31 L665 172 L30 172Z" fill="url(#area)"/><path d="M30 142 C85 136 90 112 140 117 S207 91 250 103 S320 73 360 83 S425 49 470 63 S535 38 575 50 S630 21 665 31" fill="none" stroke="#b3081b" stroke-width="3" stroke-linecap="round"/><path d="M30 154 C90 149 100 139 140 143 S210 125 250 133 S320 115 360 121 S425 104 470 111 S535 91 575 101 S630 85 665 89" fill="none" stroke="#92a8b8" stroke-width="2" stroke-dasharray="5 5"/><circle cx="665" cy="31" r="5" fill="#b3081b" stroke="#fff" stroke-width="3"/></svg></div><div class="chart-labels"><span>4月</span><span>5月</span><span>6月</span><span>7月</span><span>8月</span><span>9月</span></div></div><div class="card panel"><div class="panel-head"><h3>待办与动态</h3><span>查看全部　›</span></div><div class="activity"><div class="activity-row"><div class="activity-icon">▤</div><div><b>订单材料待银行复核</b><small>MP-2026-0831 · 10分钟前</small></div><span class="status warn">待复核</span></div><div class="activity-row"><div class="activity-icon">✓</div><div><b>检验清单字段匹配完成</b><small>12项药品 · 今天 09:42</small></div><span class="status">已完成</span></div><div class="activity-row"><div class="activity-icon">↻</div><div><b>履约记录已更新</b><small>经销商A · 昨日 16:20</small></div><span class="status">已同步</span></div></div></div></div>
+<div class="card flow-card"><div class="flow-head"><h3>一笔进货融资，如何形成可信闭环</h3><button class="btn ghost sm" data-go="flow">展开交易全景　→</button></div><div class="flow"><div class="flow-node done"><div class="bubble">▤</div><b>真实订单</b><small>融资起点</small></div><div class="arrow"></div><div class="flow-node done"><div class="bubble">⌕</div><b>智能核验</b><small>单据交叉校验</small></div><div class="arrow"></div><div class="flow-node"><div class="bubble">▣</div><b>银行审查</b><small>证据辅助决策</small></div><div class="arrow"></div><div class="flow-node"><div class="bubble">⇄</div><b>受托支付</b><small>款项直达经销商</small></div></div></div>
+<div style="margin-top:18px"><div class="panel-head"><h3>专区核心服务</h3><span>选择功能，进入业务流程</span></div><div class="section-grid"><article class="card feature" data-go="apply"><div class="feature-icon">＋</div><span class="arr">›</span><h3>药房进货贷</h3><p>关联采购订单，提交融资需求，查看办理进度。</p></article><article class="card feature" data-go="ocr"><div class="feature-icon">▤</div><span class="arr">›</span><h3>OCR 订单材料核验</h3><p>原件定位、字段提取、置信度与多材料比对。</p></article><article class="card feature" data-go="risk"><div class="feature-icon">◈</div><span class="arr">›</span><h3>RAG 银行风险报告</h3><p>检索业务证据与规则依据，报告结论可追溯。</p></article></div></div></section>
+
+<section class="page" id="apply"><div class="title-row"><div><div class="eyebrow">FINANCING APPLICATION</div><h1>药房进货贷</h1><div class="subtitle">以真实采购订单为融资依据，资金按约定定向支付</div></div><button class="btn ghost" data-go="overview">‹ 返回专区</button></div><div class="progressline"><span style="color:var(--red)">01 申请信息</span><i class="on"></i><span>02 材料核验</span><i></i><span>03 银行审批</span><i></i><span>04 支付履约</span></div><div class="callout" style="background:#f2faf7;border-color:#d8eee6;color:#447668"><b>首次入驻完成资料与授权后可复用。</b>每次融资申请关联本次采购订单，系统核对订单与履约材料；药房不必重复填写基础资料。</div><div class="two-col"><div class="card panel"><h3 class="section-title">填写融资需求</h3><div class="form-grid"><div class="field"><label>申请主体</label><input value="澳门药房A"></div><div class="field"><label>供货经销商</label><select><option>澳门经销商A</option><option>澳门经销商B</option></select></div><div class="field"><label>申请融资金额（MOP）</label><input id="amount" type="number" value="120000" min="10000" max="200000"></div><div class="field"><label>预计用款周期</label><select><option>45 天</option><option>30 天</option><option>60 天</option></select></div></div><h3 class="section-title" style="margin-top:22px">选择采购订单</h3><div class="order-option selected" onclick="selectOrder(this)"><div><b>MP-2026-0831　·　常用药品 12 项</b><small>订单金额 MOP 200,000　|　2026-08-31</small></div><span class="check">已选择 ✓</span></div><div class="order-option" onclick="selectOrder(this)"><div><b>MP-2026-0824　·　处方药 8 项</b><small>订单金额 MOP 86,500　|　2026-08-24</small></div><span style="color:#a3acb6">选择</span></div><div class="callout">放款后按合同约定受托支付给供货经销商，订单、交付与回款信息持续关联。</div><button class="btn" style="margin-top:16px" data-go="ocr">保存并核验采购材料　→</button></div><div class="card panel"><div class="panel-head"><h3>申请概览</h3><span>示例测算</span></div><div style="padding:16px;background:#fff8f8;border-radius:11px"><div style="font-size:10px;color:#8d98a5">本次融资申请金额</div><div style="font-size:27px;font-weight:800;color:var(--red);margin:5px 0">MOP <span id="amountShow">120,000</span></div><div style="font-size:10px;color:#8d98a5">关联订单 MP-2026-0831</div></div><div class="activity" style="margin-top:13px"><div class="activity-row"><div class="activity-icon">✓</div><div><b>交易材料完整度</b><small>订单、检验材料已关联</small></div><span class="status">待智能核验</span></div><div class="activity-row"><div class="activity-icon">◎</div><div><b>资金用途</b><small>药品采购周转</small></div><span class="status">明确</span></div></div><p class="subtitle" style="margin-top:14px">页面中的金额与客户信息均为演示数据。最终额度、利率、期限及审批结果以银行审核和合同为准。</p></div></div></section>
+
+<section class="page" id="ocr"><div class="title-row"><div><div class="eyebrow">DOCUMENT INTELLIGENCE · OCR + LLM</div><h1>订单与材料智能核验</h1><div class="subtitle">原件可定位 · 字段可校验 · 低置信度可复核</div></div><button class="btn ghost" data-go="apply">‹ 返回申请</button></div><div class="progressline"><span style="color:var(--green)">材料上传</span><i class="on"></i><span style="color:var(--green)">OCR识别</span><i class="on"></i><span style="color:var(--red)">交叉核验</span><i></i><span>银行复核</span></div><div class="two-col"><div class="card panel"><div class="panel-head"><h3>采购订单原件 · MP-2026-0831</h3><span>第 1 页 / 共 2 页</span></div><div class="doc-area"><div class="paper"><div class="paper-head">澳门经销商A　采购订单</div><div class="paper-line">订单编号：<span class="hl">MP-2026-0831</span></div><div class="paper-line">购货方：<span class="hl">澳门药房A</span></div><div class="paper-line">供货方：<span class="hl">澳门经销商A</span></div><div class="paper-line">药品项目：<span class="hl">常用药品，共 12 项</span></div><div class="paper-line">订单金额：<span class="hl warn">MOP 200,000</span></div><div class="paper-line">预计交货：2026 年 9 月 5 日</div><div class="paper-stamp">示例材料</div></div></div><div class="tech-tags"><span class="tech-tag">版面区域检测</span><span class="tech-tag">文字识别 OCR</span><span class="tech-tag">字段语义提取 LLM</span><span class="tech-tag">原文坐标回链</span></div><button class="btn ghost sm" style="margin-top:12px" onclick="toast('已在原件中定位：订单金额 MOP 200,000')">⌖ 查看字段在原件中的位置</button></div><div class="card panel"><div class="panel-head"><h3>模型抽取结果</h3><span class="tag">结构化 JSON · 模拟</span></div><div class="extraction"><div class="extract-row"><span>订单编号</span><b>MP-2026-0831</b><i class="confidence">99%</i><div class="meter"><i style="width:99%"></i></div></div><div class="extract-row"><span>购货方</span><b>澳门药房A</b><i class="confidence">99%</i><div class="meter"><i style="width:99%"></i></div></div><div class="extract-row"><span>供货方</span><b>澳门经销商A</b><i class="confidence">98%</i><div class="meter"><i style="width:98%"></i></div></div><div class="extract-row"><span>订单金额</span><b>MOP 200,000</b><i class="confidence">96%</i><div class="meter"><i style="width:96%"></i></div></div><div class="extract-row"><span>品类 / 数量</span><b>常用药品 / 12 项</b><i class="confidence">94%</i><div class="meter"><i style="width:94%"></i></div></div></div><div class="callout" style="background:#f2faf7;border-color:#d6eee6;color:#447668">低于置信度阈值的字段将转人工复核；模型结果仅辅助核验。</div></div></div><div class="card panel" style="margin-top:14px"><div class="panel-head"><h3>多材料交叉校验</h3><span>订单 × 检验清单 × 经销商确权</span></div><table class="match-table"><thead><tr><th>核验字段</th><th>采购订单</th><th>检验材料</th><th>经销商记录</th><th>结果</th></tr></thead><tbody><tr><td>交易主体</td><td>药房A</td><td>药房A</td><td>经销商A</td><td>✓ 一致</td></tr><tr><td>金额 / 项目</td><td>MOP 200,000</td><td>12 项药品</td><td>订单已确权</td><td>✓ 匹配</td></tr></tbody></table><div style="display:flex;justify-content:space-between;align-items:center;margin-top:13px"><span style="font-size:10px;color:#788696">核验通过 3 项　·　待人工确认 1 项</span><button class="btn sm" onclick="enterPersona('bank');go('risk')">提交银行审查　→</button></div></div></section>
+
+<section class="page" id="risk"><div class="title-row"><div><div class="eyebrow">BANK RISK INTELLIGENCE · LLM + RAG</div><h1>银行端风险审查报告</h1><div class="subtitle">从已授权材料中检索证据，让每项判断都有出处</div></div><button class="btn ghost" data-go="ocr">‹ 返回材料核验</button></div><div class="rag-banner"><div class="risk-score"><div class="score-ring"><b>76</b></div><div><div class="eyebrow" style="color:#9c6d20">综合风险提示 · 模拟</div><div style="font-size:18px;font-weight:800;margin-top:3px">中低风险 <span class="status warn" style="vertical-align:middle">建议核实备货合理性</span></div><div class="subtitle">报告仅为辅助分析，不构成授信决定</div></div></div><button class="btn ghost sm" onclick="toast('已生成演示版风险报告')">导出审查摘要　↓</button></div><div class="two-col" style="margin-top:14px"><div class="card panel"><div class="panel-head"><h3>风险维度与证据强度</h3><span>综合提示分，仅作演示</span></div><div class="risk-bars"><div class="riskbar"><label>订单真实性</label><div class="track"><i style="width:88%"></i></div><b>88</b></div><div class="riskbar"><label>经营稳定性</label><div class="track"><i style="width:76%"></i></div><b>76</b></div><div class="riskbar"><label>历史履约</label><div class="track"><i style="width:91%"></i></div><b>91</b></div><div class="riskbar attn"><label>用途合理性</label><div class="track"><i style="width:62%"></i></div><b>62</b></div></div><div class="callout">关注事项：旺季备货金额较近月均值偏高，建议结合近期销售回款与库存情况进一步核验。</div></div><div class="card panel"><div class="panel-head"><h3>RAG 检索证据</h3><span>点击来源查看引用片段</span></div><div class="source-list"><div class="source active" data-source="order"><div class="source-head"><b>采购订单 MP-2026-0831</b><span class="cite">订单原件 · 第 1 页</span></div><p>订单金额 MOP 200,000；采购品类共 12 项。</p></div><div class="source" data-source="inspection"><div class="source-head"><b>药品检验材料</b><span class="cite">检验清单 · 第 2 页</span></div><p>检验清单药品项目与订单清单对应，共 12 项。</p></div><div class="source" data-source="repay"><div class="source-head"><b>历史履约摘要</b><span class="cite">授权数据 · 近 12 个月</span></div><p>演示摘要显示，历史还款记录连续，无逾期标记。</p></div><div class="source" data-source="policy"><div class="source-head"><b>供应链融资审查规则</b><span class="cite">规则库 · 条款 4.2</span></div><p>大额备货申请需要结合交易、库存及销售情况核验用途。</p></div></div></div></div><div class="card panel" style="margin-top:14px"><div class="panel-head"><h3>报告结论与引用链</h3><span>检索 → 证据拼接 → 生成报告 → 人工复核</span></div><div class="report" id="report"><h4>风险分析摘要</h4>订单主体、金额及药品项目与检验材料相互印证，<span class="highlight">交易真实性证据较强</span>。[1][2] 历史履约摘要显示还款记录连续。[3] 本次申请金额较高，建议结合药房近期销售与库存信息复核备货用途。[4]<br><br><b>人工审批提示：</b>核对库存周转、近期销售流水及经销商交付安排后，由银行人员独立作出审查决定。</div><div style="display:flex;justify-content:flex-end;margin-top:13px"><button class="btn sm" data-go="flow">查看资金履约闭环　→</button></div></div></section>
+
+<section class="page" id="flow"><div class="title-row"><div><div class="eyebrow">CLOSED-LOOP TRACEABILITY</div><h1>一笔融资，串起七个关键节点</h1><div class="subtitle">药房按期履约、经销商按订单交付、银行按授权审查；资金流与货物流相互印证</div></div><button class="btn" data-go="credit">查看信用成长　→</button></div><div class="card map"><div class="panel-head"><h3>订单到还款 · 交易全景</h3><span>演示订单 MP-2026-0831</span></div><div class="map-row"><div class="map-node done"><i>◎</i><b>入驻授权</b><small>基本资料一次录入</small></div><div class="map-node done"><i>▤</i><b>关联订单</b><small>选择本次采购</small></div><div class="map-node done"><i>⌕</i><b>材料核验</b><small>OCR与经销商确权</small></div><div class="map-node"><i>▣</i><b>银行审批</b><small>独立审查决定</small></div><div class="map-node"><i>⇢</i><b>受托支付</b><small>银行直付经销商</small></div><div class="map-node"><i>▦</i><b>发货签收</b><small>经销商发货药房验收</small></div><div class="map-node"><i>↻</i><b>销售还款</b><small>按合同偿还本息</small></div></div></div><div class="two-col" style="margin-top:14px"><div class="card panel"><div class="panel-head"><h3>业务状态时间线</h3><span>最近更新 · 今天 09:42</span></div><div class="timeline"><div class="event"><b>采购订单 MP-2026-0831 已关联</b><small>澳门药房A提交融资需求 · 申请 MOP 120,000</small></div><div class="event"><b>OCR识别与材料比对完成</b><small>订单字段匹配检验材料；1项待银行复核</small></div><div class="event"><b>进入银行风险审查</b><small>RAG报告已关联订单、检验与履约证据</small></div><div class="event"><b>后续：审批与定向支付</b><small>审批通过后按合同约定向经销商支付</small></div></div></div><div class="card panel"><div class="panel-head"><h3>专款专用的资金路径</h3><span>闭环设计亮点</span></div><div style="display:grid;gap:10px"><div class="order-option"><div><b>银行 → 经销商</b><small>受托支付，资金用途与订单绑定</small></div><span style="color:var(--red)">MOP 120,000</span></div><div class="order-option"><div><b>经销商 → 药房</b><small>发货、签收、检验材料留痕</small></div><span class="check">订单交付</span></div><div class="order-option"><div><b>药房经营回款 → 还款</b><small>履约结果沉淀为后续评估信息</small></div><span class="check">信用积累</span></div></div><div class="callout">让融资跟随真实贸易发生，减少资金空转；具体业务规则以银行实际审批和合同为准。</div></div></div></section>
+
+<section class="page" id="credit"><div class="title-row"><div><div class="eyebrow">CREDIT GROWTH</div><h1>每一次按期履约，都在积累经营信用</h1><div class="subtitle">将真实订单、交付与还款信息沉淀为可持续评估的经营记录</div></div><button class="btn ghost" data-go="overview">‹ 返回总览</button></div><div class="two-col"><div class="card credit-score"><div><div class="eyebrow">履约信用画像 · 模拟</div><div class="credit-number">良好</div><div class="subtitle">稳定交易记录持续积累</div></div><div style="flex:1"><div style="display:flex;justify-content:space-between;font-size:10px;color:#718094"><span>信用成长进度</span><b style="color:var(--green)">82 / 100</b></div><div class="credit-gauge"><i></i></div><small style="font-size:9px;color:#8995a2">良好履约可作为银行后续复核参考，不代表授信承诺。</small></div></div><div class="card panel"><div class="panel-head"><h3>履约记录</h3><span>近 12 个月 · 模拟</span></div><div class="activity"><div class="activity-row"><div class="activity-icon">▤</div><div><b>真实采购订单</b><small>订单关联与材料已核验</small></div><strong>18 笔</strong></div><div class="activity-row"><div class="activity-icon">✓</div><div><b>按期履约记录</b><small>采购交付与订单匹配</small></div><strong>16 笔</strong></div><div class="activity-row"><div class="activity-icon">↻</div><div><b>按期还款记录</b><small>历史还款摘要</small></div><strong>12 期</strong></div></div></div></div><div class="grid2"><div class="card panel"><div class="panel-head"><h3>信用如何成长</h3><span>交易数据逐步沉淀</span></div><div class="flow"><div class="flow-node done"><div class="bubble">▤</div><b>真实订单</b><small>来源清晰</small></div><div class="arrow"></div><div class="flow-node done"><div class="bubble">✓</div><b>交付核验</b><small>材料匹配</small></div><div class="arrow"></div><div class="flow-node done"><div class="bubble">↻</div><b>按期履约</b><small>记录连续</small></div><div class="arrow"></div><div class="flow-node"><div class="bubble">↗</div><b>后续评估</b><small>银行独立判断</small></div></div></div><div class="card panel"><div class="panel-head"><h3>下一步建议</h3><span>经营金融助手</span></div><div class="callout" style="margin:0 0 10px">继续关联采购订单与交付材料，保持交易资料完整，便于后续审查时回溯。</div><button class="btn sm" data-go="apply">关联新采购订单　→</button></div></div></section>
+<section class="page" id="bankhome"><div class="title-row"><div><div class="eyebrow">BANK REVIEW DESK</div><h1>银行审查工作台</h1><div class="subtitle">银行统一查看授权范围内的多家药房申请，再逐笔审查订单和证据</div></div><button class="btn" data-go="bankqueue">打开多药房审查队列　→</button></div><div class="statgrid"><div class="card stat"><div class="stat-top">待审融资申请 <span class="stat-icon">▤</span></div><strong>08 笔</strong><small>本页模拟队列</small></div><div class="card stat"><div class="stat-top">材料核验完成 <span class="stat-icon">✓</span></div><strong>06 笔</strong><small>其中 2 笔待人工复核</small></div><div class="card stat"><div class="stat-top">风险关注事项 <span class="stat-icon">!</span></div><strong>03 项</strong><small>用途、库存、经营波动</small></div><div class="card stat"><div class="stat-top">借款人范围 <span class="stat-icon">⌂</span></div><strong>多家药房</strong><small>仅展示已授权业务</small></div></div><div class="grid2"><div class="card panel"><div class="panel-head"><h3>多药房 · 优先审查申请</h3><button class="btn ghost sm" data-go="bankqueue">查看全部客户 →</button></div><div class="activity"><div class="activity-row"><div class="activity-icon">◈</div><div><b>药房A · MP-2026-0831</b><small>MOP 120,000 · OCR通过 · 1项待复核</small></div><span class="status warn">待审查</span></div><div class="activity-row"><div class="activity-icon">▤</div><div><b>药房B · MP-2026-0827</b><small>MOP 86,500 · 材料已齐</small></div><span class="status">材料齐备</span></div><div class="activity-row"><div class="activity-icon">!</div><div><b>药房C · MP-2026-0821</b><small>MOP 210,000 · 建议核对库存</small></div><span class="status warn">需关注</span></div></div></div><div class="card panel"><div class="panel-head"><h3>AI审查辅助 · 人工决策</h3><span>流程边界</span></div><div class="flow" style="grid-template-columns:repeat(5,1fr)"><div class="flow-node done"><div class="bubble">▤</div><b>材料进入</b></div><div class="arrow"></div><div class="flow-node done"><div class="bubble">⌕</div><b>字段核验</b></div><div class="arrow"></div><div class="flow-node"><div class="bubble">◈</div><b>证据审查</b></div></div><div class="callout">RAG报告提供来源引用与风险提示，不自动授信、不替代审批。银行只处理权限范围内的客户申请。</div></div></div><div class="card flow-card"><div class="flow-head"><h3>选择具体药房申请后，查看该笔材料与风险证据</h3><button class="btn sm" data-go="risk">打开药房A示例报告　→</button></div></div></section><section class="page" id="bankqueue"><div class="title-row"><div><div class="eyebrow">BORROWER PORTFOLIO</div><h1>多药房融资审查队列</h1><div class="subtitle">一个银行工作台管理多家借款药房；进入申请后再查看单户材料</div></div><button class="btn ghost" data-go="bankhome">‹ 返回银行工作台</button></div><div class="callout">数据范围：当前银行有权限访问的客户与申请。下方药房名称、笔数和金额均为演示样例，不代表真实客户。</div><div class="card panel" style="margin-top:12px"><div class="panel-head"><h3>待处理申请 · 示例 6 家药房</h3><span>筛选：全部客户 / 待审 / 需补件 / 风险关注</span></div><div style="display:flex;gap:7px;flex-wrap:wrap;margin:0 0 12px"><span class="tech-tag">全部 6</span><span class="tech-tag">待审 3</span><span class="tech-tag">材料待补 1</span><span class="tech-tag">关注 2</span></div><div class="queue-row header"><span>申请主体 / 订单</span><span>融资金额</span><span>材料状态</span><span>关注等级</span><span>操作</span></div><div class="queue-row"><b>药房A<br><small>MP-2026-0831</small></b><span>MOP 120,000</span><span>OCR已完成</span><span class="mini-flag">需复核 1 项</span><button class="btn sm" data-go="risk">审查</button></div><div class="queue-row"><b>药房B<br><small>MP-2026-0827</small></b><span>MOP 86,500</span><span>材料齐备</span><span class="status">一般</span><button class="btn ghost sm" onclick="toast('已打开药房B示例申请')">查看</button></div><div class="queue-row"><b>药房C<br><small>MP-2026-0821</small></b><span>MOP 210,000</span><span>待补充库存</span><span class="mini-flag">关注</span><button class="btn ghost sm" onclick="toast('待药房C补充库存与销售材料')">查看</button></div><div class="queue-row"><b>药房D<br><small>MP-2026-0819</small></b><span>MOP 74,200</span><span>材料齐备</span><span class="status">一般</span><button class="btn ghost sm" onclick="toast('已打开药房D示例申请')">查看</button></div><div class="queue-row"><b>药房E<br><small>MP-2026-0816</small></b><span>MOP 95,000</span><span>待经销商确权</span><span class="mini-flag">待确认</span><button class="btn ghost sm" onclick="toast('等待对应经销商完成订单确权')">查看</button></div><div class="queue-row"><b>药房F<br><small>MP-2026-0812</small></b><span>MOP 138,000</span><span>风险复核中</span><span class="mini-flag">关注</span><button class="btn ghost sm" onclick="toast('已打开药房F示例申请')">查看</button></div><div class="callout">授信审批、贷款发放、资金结算及贷后风险管理由银行负责；平台提供订单核验与风险证据辅助。</div></div></section><section class="page" id="supplierhome"><div class="title-row"><div><div class="eyebrow">DISTRIBUTOR OPERATIONS</div><h1>经销商履约工作台</h1><div class="subtitle">汇总本经销商供货网络内多家药房的订单、交付与应收情况</div></div><button class="btn" data-go="supplierorders">查看下游订单　→</button></div><div class="callout">策划书案例测算提到：中型经销商可能服务 40 余家药房。此处以药房A–E展示多客户台账；真实系统只呈现本经销商授权关联的药房。</div><div class="statgrid"><div class="card stat"><div class="stat-top">待确认采购订单 <span class="stat-icon">▤</span></div><strong>03 笔</strong><small>来自多家下游药房 · 模拟</small></div><div class="card stat"><div class="stat-top">待发货订单 <span class="stat-icon">▦</span></div><strong>02 笔</strong><small>核验后安排发货</small></div><div class="card stat"><div class="stat-top">待收受托支付 <span class="stat-icon">￥</span></div><strong>MOP 120,000</strong><small>银行审批通过后按约定支付</small></div><div class="card stat"><div class="stat-top">关联下游药房 <span class="stat-icon">⌂</span></div><strong>40+</strong><small>策划书场景测算 · 非运营实绩</small></div></div><div class="grid2"><div class="card panel"><div class="panel-head"><h3>下游药房订单动态</h3><button class="btn ghost sm" data-go="supplierorders">订单中心 →</button></div><div class="activity"><div class="activity-row"><div class="activity-icon">▤</div><div><b>药房A · MP-2026-0831</b><small>常用药品 12 项 · MOP 200,000</small></div><span class="status warn">待确认</span></div><div class="activity-row"><div class="activity-icon">⇢</div><div><b>药房B · MP-2026-0826</b><small>处方药 8 项 · 已确认供货</small></div><span class="status">备货中</span></div><div class="activity-row"><div class="activity-icon">￥</div><div><b>药房C · MP-2026-0818</b><small>受托支付 · MOP 74,200</small></div><span class="status">已到账</span></div></div></div><div class="card panel"><div class="panel-head"><h3>经销商在交易闭环中的职责</h3><span>合作方视图</span></div><div class="timeline"><div class="event"><b>确认采购订单</b><small>协助银行核验真实贸易背景</small></div><div class="event"><b>确认供货与交付安排</b><small>回传发货、物流及签收信息</small></div><div class="event"><b>管理订单与应收记录</b><small>查看本机构下游药房的交易状态</small></div></div></div></div><div class="card panel" style="margin-top:12px"><div class="panel-head"><h3>我的下游药房</h3><span>示例 5 家 · 每家多笔订单</span></div><div class="queue-row header"><span>药房客户</span><span>在途订单</span><span>应收状态</span><span>最近动态</span><span>操作</span></div><div class="queue-row"><b>药房A</b><span>3 笔</span><span>MOP 120,000 待结算</span><span>订单待确认</span><button class="btn ghost sm" data-go="supplierorders">查看</button></div><div class="queue-row"><b>药房B</b><span>2 笔</span><span>MOP 86,500 备货中</span><span>已确认供货</span><button class="btn ghost sm" data-go="supplierorders">查看</button></div><div class="queue-row"><b>药房C</b><span>5 笔</span><span>部分已回款</span><span>签收已回传</span><button class="btn ghost sm" data-go="supplierorders">查看</button></div><div class="queue-row"><b>药房D</b><span>1 笔</span><span>待确权</span><span>新订单</span><button class="btn ghost sm" data-go="supplierorders">查看</button></div><div class="queue-row"><b>药房E</b><span>4 笔</span><span>已结清</span><span>履约完成</span><button class="btn ghost sm" data-go="supplierorders">查看</button></div></div></section><section class="page" id="supplierorders"><div class="title-row"><div><div class="eyebrow">ORDER FULFILLMENT</div><h1>订单确认与履约</h1><div class="subtitle">回传供货确认、发货和签收信息，让交易过程持续可追</div></div><button class="btn ghost" data-go="supplierhome">‹ 返回经销商工作台</button></div><div class="card panel"><div class="panel-head"><h3>待履约采购订单</h3><span>澳门经销商A · 示例订单</span></div><div class="queue-row header"><span>订单 / 采购方</span><span>药品品类</span><span>金额</span><span>当前状态</span><span>操作</span></div><div class="queue-row"><b>MP-2026-0831<br><small>澳门药房A</small></b><span>常用药品 12 项</span><span>MOP 200,000</span><span id="supplierStatus" class="mini-flag">待确认</span><button id="confirmSupply" class="btn sm" onclick="confirmSupplierOrder()">确认供货</button></div><div class="queue-row"><b>MP-2026-0826<br><small>澳门安康药房</small></b><span>处方药 8 项</span><span>MOP 86,500</span><span class="status">备货中</span><button class="btn ghost sm" onclick="toast('发货凭证已关联订单')">回传凭证</button></div><div class="two-col" style="margin-top:15px"><div class="callout"><b>受托支付状态</b><br>订单 MP-2026-0831 · 待银行审批<br>审批通过后按约定支付至经销商账户。</div><div class="callout" style="background:#f2faf7;border-color:#d8eee6;color:#447668"><b>履约凭证</b><br>供货确认 → 发货单 → 药房签收<br>每个环节均可关联到原采购订单。</div></div></div></section>
+</div></main><nav class="mobile-tabs" id="mobileTabs" hidden aria-label="手机银行底部导航"><button data-tab-index="0" data-go="roles"><span>⌂</span><small>首页</small></button><button data-tab-index="1" data-go="roles"><span>＋</span><small>服务</small></button><button data-tab-index="2" data-go="roles"><span>▤</span><small>订单</small></button><button data-tab-index="3" data-go="roles"><span>◉</span><small>我的</small></button></nav><div class="home-indicator"></div></div><div class="toast" id="toast"></div>
+<script src="./gsap.min.js"></script>
+<script>
+const labels={apphome:'手机银行首页',roles:'选择服务身份',overview:'药房端 · 服务总览',apply:'药房端 · 融资申请',ocr:'药房端 · 订单材料核验',risk:'银行端 · 风险报告',flow:'交易履约闭环',credit:'药房端 · 信用成长',bankhome:'银行端 · 审查工作台',bankqueue:'银行端 · 融资审查队列',supplierhome:'经销商端 · 经营工作台',supplierorders:'经销商端 · 订单履约'};const personaNames={pharmacy:['药房用户','药','overview'],bank:['银行用户','银','bankhome'],supplier:['经销商用户','商','supplierhome']};const personaFor={overview:'pharmacy',apply:'pharmacy',ocr:'pharmacy',credit:'pharmacy',bankhome:'bank',bankqueue:'bank',risk:'bank',supplierhome:'supplier',supplierorders:'supplier',flow:'pharmacy'};let currentPersona=null;const pages=[...document.querySelectorAll('.page')],nav=[...document.querySelectorAll('.nav button')],tabMap={pharmacy:[['overview','首页','⌂'],['apply','融资','＋'],['ocr','订单','▤'],['credit','我的','◉']],bank:[['bankhome','工作台','⌂'],['bankqueue','审查','▤'],['risk','报告','◈'],['roles','切换','◉']],supplier:[['supplierhome','工作台','⌂'],['supplierorders','订单','▤'],['flow','进度','⇄'],['roles','切换','◉']]},appTabs=[['apphome','首页','⌂'],['noop','金融','▦'],['roles','工e药链','药'],['noop','我的','◉']];function refreshTabs(activeId){const shell=document.getElementById('mobileTabs'),buttons=[...shell.querySelectorAll('button')],tabs=currentPersona?tabMap[currentPersona]:appTabs;shell.hidden=false;buttons.forEach((b,i)=>{const item=tabs[i];b.dataset.go=item[0]==='noop'?'':item[0];b.innerHTML='<span>'+item[2]+'</span><small>'+item[1]+'</small>';b.classList.toggle('active',item[0]===activeId);if(item[0]==='noop'&&!b.dataset.toastBound){b.dataset.toastBound='1';b.addEventListener('click',()=>toast('此为手机银行导航示意，当前演示聚焦工e药链专区'))}})}function animatePageTransition(page){if(!page||!window.gsap||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;gsap.killTweensOf(page);gsap.fromTo(page,{autoAlpha:0,y:7},{autoAlpha:1,y:0,duration:.24,ease:'power2.out',clearProps:'transform,opacity,visibility'})}function go(id){if(!labels[id])return;if(id==='roles'||id==='apphome')currentPersona=null;pages.forEach(p=>p.classList.toggle('active',p.id===id));nav.forEach(n=>{const visible=currentPersona&&n.dataset.personas.includes(currentPersona);n.hidden=!visible;n.classList.toggle('active',n.dataset.page===id)});animatePageTransition(document.getElementById(id));document.getElementById('crumbTitle').textContent=labels[id];document.getElementById('navLabel').textContent=currentPersona?personaNames[currentPersona][0]+' 工作台':'选择服务身份';document.getElementById('roleSwitch').hidden=!currentPersona;document.getElementById('userLabel').textContent=currentPersona?personaNames[currentPersona][0]:'欢迎体验';document.getElementById('avatar').textContent=currentPersona?personaNames[currentPersona][1]:'工';refreshTabs(id);const main=document.querySelector('.main');if(main)main.scrollTop=0;history.replaceState(null,'','#'+id)}function enterPersona(role){currentPersona=role;go(personaNames[role][2])}function confirmSupplierOrder(){document.getElementById('supplierStatus').className='status';document.getElementById('supplierStatus').textContent='已确认';const b=document.getElementById('confirmSupply');b.textContent='已确认 ✓';b.disabled=true;b.style.opacity='.65';toast('供货确认已回传，订单进入履约流程')}document.querySelectorAll('.role-card').forEach(el=>el.addEventListener('click',()=>enterPersona(el.dataset.role)));function selectOrder(el){document.querySelectorAll('.order-option').forEach(x=>{if(x.parentElement.classList.contains('panel')){x.classList.remove('selected');const s=x.querySelector('span:last-child');if(s){s.textContent='选择';s.style.color='#a3acb6'}}});el.classList.add('selected');const t=el.querySelector('span:last-child');if(t){t.textContent='已选择 ✓';t.style.color='var(--green)'}toast('已关联采购订单 '+el.querySelector('b').textContent.split('　')[0])}function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(window._toastTimer);window._toastTimer=setTimeout(()=>t.classList.remove('show'),2200)}document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));document.querySelectorAll('.source').forEach(s=>s.addEventListener('click',()=>{document.querySelectorAll('.source').forEach(x=>x.classList.remove('active'));s.classList.add('active');const snippets={order:'订单主体、金额及药品项目与检验材料相互印证，交易真实性证据较强。',inspection:'检验清单药品项目与订单清单对应，共 12 项，可支持材料完整性判断。',repay:'历史履约摘要显示还款记录连续，无逾期标记；该内容为演示授权数据。',policy:'规则库提示：大额备货申请需结合交易、库存与销售情况核验资金用途。'};document.querySelector('#report').innerHTML='<h4>检索证据片段</h4>'+snippets[s.dataset.source]+' <span class="highlight">['+({order:1,inspection:2,repay:3,policy:4}[s.dataset.source])+']</span><br><br><b>审查提示：</b>请结合其他授权材料综合判断，并由银行人员独立复核。'}));document.getElementById('amount').addEventListener('input',e=>{document.getElementById('amountShow').textContent=(Number(e.target.value)||0).toLocaleString('en-US')});function updatePhoneClock(){const d=new Date();document.getElementById('clock').textContent=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}updatePhoneClock();setInterval(updatePhoneClock,30000);function initial(){go('apphome')}initial();
+</script></body></html>
+
+
+
+
+
+
+
+
+
+
+
